@@ -16,13 +16,14 @@
                     alt="Logo yaya's blog"></a>
         </div>
         <div class="header__contenido">
-            <h2 class="header__contenido--h2">El blog de la yaya</h2>
-            <p>comida tradicional</p>
-            <hr>
+            <!-- Etiquetas como: h1, h2, h3, etc. se usan como encabezados -->
+            <h2 class="header__titulo">El blog de la yaya</h2>
+            <p class="header__descripcion">comida tradicional</p>
+            <hr class="header__linea">
         </div>
         <nav class="nav">
-            <ul class="nav__ul">
-                <!-- <a href=""></a>: lo he usado para que  -->
+            <ul class="nav__list">
+                <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
                 <li class="nav__item"><a href="#">Inicio</a></li>
                 <li class="nav__item"><a href="#">Recetario</a></li>
                 <li class="nav__item"><a href="#">Nuestra Historia</a></li>
@@ -33,29 +34,39 @@
     </header>
 
     <main class="main">
-        <section class="container">
-            <div class="container__titulo">
-                <h1>Especialidades de la casa</h1>
+        <div class="main__container">
+            <section class="main__titulo">
+                <h1 class="main__titulo--h1">Especialidades de la casa</h1>
+            </section>
+            <div class="recetas">
+                <a href="#"><img class="recetas__img" src="img/espaguetis.jpg" alt=""></a>
+                <a href="#"><img class="recetas__img" src="img/filete.jpg" alt=""></a>
+                <a href="#"><img class="recetas__img" src="img/arrozNegro.jpg" alt=""></a>
+                <a href="#"><img class="recetas__img" src="img/pastelLimon .jpg" alt=""></a>
             </div>
-            <picture class="recetas">
-                <a href="#"><img class="recetas__imgs" src="img/espaguetis.jpg" alt=""></a>
-                <a href="#"><img class="recetas__imgs" src="img/filete.jpg" alt=""></a>
-                <a href="#"><img class="recetas__imgs" src="img/paella.jpg" alt=""></a>
-                <a href="#"><img class="recetas__imgs" src="img/pastelLimón .jpg" alt=""></a>
-            </picture>
             <div class="carrousel">
-                <h2>Más recetas</h2>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
-                <a href="#"><img class="carrousel__imgs" src="" alt=""></a>
+                <h2 class="carrousel__titulo">Más recetas</h2>
+                <div class="carrousel__imagenes">
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 1"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 2"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 3"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 4"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 5"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 6"></a>
+                    <a href="#"><img class="carrousel__img" src="" alt="Imagen 7"></a>
 
+                    <div class="carrousel__btn">
+                        <button class="carrousel__btn--izq" id="btnAnt">Anterior</button>
+                        <button class="carrousel__btn--der" id="btnSig">Siguiente</button>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
+
+    <footer class="footer">
+        
+    </footer>
 
 </body>
 
