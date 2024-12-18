@@ -8,22 +8,29 @@
     <link rel="stylesheet" href="css/inicio.css">
 </head>
 
-<body>
+<body class="body">
     <!-- Metodología BEM -->
     <header class="header">
         <div class="header__logo">
-            <a href="./index.html"><img class="header__logotipo" src="img4/logoBlancoBorde.png"
+            <a href="./index.html"><img class="header__logotipo" src="img/logoBlancoBorde.png"
                     alt="Logo yaya's blog"></a>
         </div>
+        <div class="header__contenido">
+            <h2 class="header__contenido--h2">El blog de la yaya</h2>
+            <p>comida tradicional</p>
+            <hr>
+        </div>
         <nav class="header__nav">
-            <ul class="nav__lista">
-                <li class="nav__li"><a href="#">Inicio</a></li>
-                <li class="nav__li"><a href="#">Recetario</a></li>
-                <li class="nav__li"><a href="#">Nuestra Historia</a></li>
-                <li class="nav__li"><a href="#">Registro</a></li>
-                <li class="nav__li"><a href="#">Contacto</a></li>
+            <ul class="header__navUl">
+                <!-- <a href=""></a>: lo he usado para que  -->
+                <li class="header__navUl--item"><a href="#">Inicio</a></li>
+                <li class="header__navUl--item"><a href="#">Recetario</a></li>
+                <li class="header__navUl--item"><a href="#">Nuestra Historia</a></li>
+                <li class="header__navUl--item"><a href="#">Registro</a></li>
+                <li class="header__navUl--item"><a href="#">Contacto</a></li>
             </ul>
         </nav>
+        
 
     </header>
 

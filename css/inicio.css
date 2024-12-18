@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header__logo {}
+
+.header__logotipo {
+    width: 250px;
+    height: 100px;
+}
+
+.header__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__contenido--h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header__contenido--h4 {
+    
+}
+
+.header__nav {
+
+}
+
+.header__navUl {
+
+}
+
+.header__navUl--item {
+
+}
