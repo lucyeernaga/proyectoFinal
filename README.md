@@ -44,6 +44,8 @@ Sumado a esto, otra etiqueta clave es `<a href=""></a>` ya que crea enlaces para
 
 
 
+
+
 ## foto pastel limon
 Opción con rotación de 90 grados (si deseas rotar completamente la imagen en lugar de reflejarla):
 Si lo que quieres es rotar la imagen 90 grados (de vertical a horizontal), puedes usar esta propiedad CSS:

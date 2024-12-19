@@ -11,23 +11,25 @@ font-family: 'Gabarito', serif;
 
 .body {
     font-family: 'Gabarito', serif; /* Queria usar esta fuente en concreto que saqué de https://fonts.google.com/ */
-    background-color: #faeae1;
+    background-color: #2d2826;
+    line-height: 1.6;
 }
 
 .header {
     position: relative; /* El header ocupa su espacio normal, es la referencia para la imagen del fondo*/
     text-align: center; /*Para centrar el texto del header*/
     color: #faeae1; /* Color de la fuente del titulo*/
+    padding: 20px;
 }
 
 .header__imagen img {
     width: 100%; 
-    height: auto; 
+    height: 400px; 
     position: absolute; /* Es para que la imagen quede atrás del todo, coloca los elementos que tenga más cerca alguna position*/
     top: 0; /* Para que vaya 0px arriba */
     left: 0; /* Para que vaya 0px a la izq*/
     z-index: -1; /* Pone la imagen detrás del contenido del header*/
-    /* object-fit: cover; */
+    object-fit: cover; /* Para que la imagen cubra todo el header en cualquier pantalla*/
 }
 
 .header__contenido {
@@ -35,38 +37,53 @@ font-family: 'Gabarito', serif;
 }
 
 .header__logotipo {
-    max-width: 50%; /*Para que ocupe el 50% del tamaño de la */
+    max-width: 70%; /*Para que ocupe el 50% del tamaño de la */
+    margin: 0 auto;
+    display: block;
 }
 
 .header__titulo {
-    font-size: 2rem; /* Edita el tamaño de la fuente */
+    font-size: 1.6rem; /* Edita el tamaño de la fuente */
     margin-top: 20px; /* Deja un espacio debajo del párrafo para mejorar su comprensión*/
+    font-weight: 600;
 }
 
 .header__descripcion {
-    font-size: 1.1rem; 
+    font-size: 0.9rem; 
     margin-bottom: 20px; 
+}
+
+.header__linea {
+    border: 2px solid #faeae1;
+    margin: 20px auto;
+    -webkit-user-drag: 20px;
 }
 
 .nav__list {
     display: flex; /* Hace que el contenido/elementos sea flexible*/
+    flex-direction: row;
     justify-content: center; /* Centra los elementos horizonralmente*/
     list-style: none; /* Elimina estilos (los puntos) a la lista */
-    gap: 15px; /* Espacio entre los elementos*/
+    gap: 9px; /* Espacio entre los elementos*/
 }
 
 .nav__item {
-    margin: 10px;
+    margin: 7px 0;
+    text-align: center;
 }
 
 .nav__item a {
     text-decoration: none; /* Elimina el subrayado del texto*/
     color: #faeae1; /* Cambia el color del texto*/
     font-size: 0.9rem;
+    border-radius: 4px;
+    padding: 8px 6px;
+    transition: background-color .7s ease; /* Para que el fondo tarde 7segundos en aparecer*/
 }
 
 .nav__item a:hover {
-    color: #bf8551; /* Cambia el color del texto al pasar pro encima el ratón*/
+    background-color: #bf8551;
+    color: beige; /* Cambia el color del texto al pasar pro encima el ratón*/
 }
 
 .main {
@@ -74,14 +91,60 @@ font-family: 'Gabarito', serif;
 }
 
 .main__container {
-    width: 12000px;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el tamaño max del contenedor */
+    margin: 0 auto;
+}
+
+.main__titulo {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #bf8551;
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recetas__1, .recetas__2, .recetas__3, .recetas__4 {
+    width: 100%;
+    position: relative;
+}
+
+.receta__1, .receta__2, .receta__3, .receta__4 {
+    width: 100%;
+    height: auto;
 }
 
 
 
-/* Media query */
 
-/* Pantallas grandes */
-/* Pantallas desktop */
-/* Pantallas tablets */
-/* Pantallas móviles */
+
+/* Media Query para pantallas grandes */
+
+
+
+/* Media Query para desktop */
+@media screen and (min-width: 1024px) {
+
+    
+}
+
+
+/* Media Query para tablets*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+}
+
+
+/* Media Query para móviles */
+@media screen and (max-width: 768px) {
+
+
+}
+
+
+
