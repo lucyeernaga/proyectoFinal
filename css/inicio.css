@@ -17,7 +17,7 @@ font-family: 'Gabarito', serif;
 .header {
     position: relative; /* El header ocupa su espacio normal, es la referencia para la imagen del fondo*/
     text-align: center; /*Para centrar el texto del header*/
-    color: white; /* Color de la fuente del titulo*/
+    color: #faeae1; /* Color de la fuente del titulo*/
 }
 
 .header__imagen img {
@@ -27,6 +27,7 @@ font-family: 'Gabarito', serif;
     top: 0; /* Para que vaya 0px arriba */
     left: 0; /* Para que vaya 0px a la izq*/
     z-index: -1; /* Pone la imagen detrás del contenido del header*/
+    /* object-fit: cover; */
 }
 
 .header__contenido {
@@ -48,10 +49,9 @@ font-family: 'Gabarito', serif;
 }
 
 .nav__list {
-    display: flex; /* Esta prop.forma parte de Flexbox y hace que el contenido/elementos sea flexible*/
-    flex-direction: row; /* Por defecto, los elementos se alinean de izq a der*/
-    justify-content: center; /* Como puse f-d: row, esta prop. centra los elementos horizonralmente*/
-    list-style: none; /* Le quita los puntos a la lista */
+    display: flex; /* Hace que el contenido/elementos sea flexible*/
+    justify-content: center; /* Centra los elementos horizonralmente*/
+    list-style: none; /* Elimina estilos (los puntos) a la lista */
     gap: 15px; /* Espacio entre los elementos*/
 }
 
@@ -61,7 +61,7 @@ font-family: 'Gabarito', serif;
 
 .nav__item a {
     text-decoration: none; /* Elimina el subrayado del texto*/
-    color: white; /* Cambia el color del texto*/
+    color: #faeae1; /* Cambia el color del texto*/
     font-size: 0.9rem;
 }
 
@@ -69,9 +69,19 @@ font-family: 'Gabarito', serif;
     color: #bf8551; /* Cambia el color del texto al pasar pro encima el ratón*/
 }
 
+.main {
+    padding: 20px;
+}
+
+.main__container {
+    width: 12000px;
+}
 
 
 
+/* Media query */
 
-
-
+/* Pantallas grandes */
+/* Pantallas desktop */
+/* Pantallas tablets */
+/* Pantallas móviles */
