@@ -10,25 +10,68 @@ font-family: 'Gabarito', serif;
 }
 
 .body {
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Gabarito', serif;
+    font-family: 'Gabarito', serif; /* Queria usar esta fuente en concreto que saqué de https://fonts.google.com/ */
     background-color: #faeae1;
 }
 
 .header {
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(img/batido.jpg) ;
-} 
-
-.main__container {
-    max-width: 1200px;
-    margin: 0 auto;
+    position: relative; /* El header ocupa su espacio normal, es la referencia para la imagen del fondo*/
+    text-align: center; /*Para centrar el texto del header*/
+    color: white; /* Color de la fuente del titulo*/
 }
 
-.recetas__img {
-    max-width: 100%;
+.header__imagen img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; /* Es para que la imagen quede atrás del todo, coloca los elementos que tenga más cerca alguna position*/
+    top: 0; /* Para que vaya 0px arriba */
+    left: 0; /* Para que vaya 0px a la izq*/
+    z-index: -1; /* Pone la imagen detrás del contenido del header*/
 }
 
-.carrousel__img {
-    max-width: 50%;
+.header__contenido {
+    padding: 60px 20px; /* El padding ajusta el espacio alrededor del contenido para verlo de manera más clara*/
 }
+
+.header__logotipo {
+    max-width: 50%; /*Para que ocupe el 50% del tamaño de la */
+}
+
+.header__titulo {
+    font-size: 2rem; /* Edita el tamaño de la fuente */
+    margin-top: 20px; /* Deja un espacio debajo del párrafo para mejorar su comprensión*/
+}
+
+.header__descripcion {
+    font-size: 1.1rem; 
+    margin-bottom: 20px; 
+}
+
+.nav__list {
+    display: flex; /* Esta prop.forma parte de Flexbox y hace que el contenido/elementos sea flexible*/
+    flex-direction: row; /* Por defecto, los elementos se alinean de izq a der*/
+    justify-content: center; /* Como puse f-d: row, esta prop. centra los elementos horizonralmente*/
+    list-style: none; /* Le quita los puntos a la lista */
+    gap: 15px; /* Espacio entre los elementos*/
+}
+
+.nav__item {
+    margin: 10px;
+}
+
+.nav__item a {
+    text-decoration: none; /* Elimina el subrayado del texto*/
+    color: white; /* Cambia el color del texto*/
+    font-size: 0.9rem;
+}
+
+.nav__item a:hover {
+    color: #bf8551; /* Cambia el color del texto al pasar pro encima el ratón*/
+}
+
+
+
+
+
+
+

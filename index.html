@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Yaya's Blog" content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
+    <meta name="Yaya's Blog"
+        content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
     <title>Yaya's Blog</title>
     <link rel="stylesheet" href="css/inicio.css">
     <!-- Estoy usando estos links de googleFonts para poder usar las fuentes Gabarito y Poppins en mi trabajo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -19,27 +21,33 @@
     <!-- Metodología BEM -->
     <!-- La etiqueta <header> contiene la información del encabezado -->
     <header class="header">
-        <div class="header__logo">
-            <a href="./index.html"><img class="header__logotipo" src="img4/logoBlancoBorde.png"
-                    alt="Logo yaya's blog"></a>
+        <div class="header__imagen">
+            <img src="img/batido.jpg" alt="Imagen de fondo">
         </div>
+
         <div class="header__contenido">
+            <div class="header__logo">
+                <a href="./index.html"><img class="header__logotipo" src="img/logoBlancoSinFondo.png"
+                        alt="Logo yaya's blog"></a>
+            </div>
             <!-- Etiquetas como: h1, h2, h3, etc. se usan como encabezados y <p> para escribir párrafos o texto -->
             <h2 class="header__titulo">El blog de la yaya</h2>
-            <p class="header__descripcion">comida tradicional</p>
+            <p class="header__descripcion">Comida tradicional</p>
             <hr class="header__linea">
+            <!-- Menú de navegación -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
+                    <li class="nav__item"><a href="#">Inicio</a></li>
+                    <li class="nav__item"><a href="#">Recetario</a></li>
+                    <li class="nav__item"><a href="#">Nosotros</a></li>
+                    <li class="nav__item"><a href="#">Registro</a></li>
+                    <li class="nav__item"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
-                <li class="nav__item"><a href="#">Inicio</a></li>
-                <li class="nav__item"><a href="#">Recetario</a></li>
-                <li class="nav__item"><a href="#">Nuestra Historia</a></li>
-                <li class="nav__item"><a href="#">Registro</a></li>
-                <li class="nav__item"><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+
 
     <!-- La etiqueta main alberga todo el contenido principal de la web -->
     <main class="main">
