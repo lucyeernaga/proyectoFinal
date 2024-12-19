@@ -25,7 +25,13 @@ Sumado a esto, otra etiqueta clave es `<a href=""></a>` ya que crea enlaces para
 
 
 
-
+ 
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 1em;*/
 
 
 
