@@ -31,7 +31,10 @@ Sumado a esto, otra etiqueta clave es `<a href=""></a>` ya que crea enlaces para
 
 
 
-
+#faeae1
+#5e3023
+#bf8551
+#000000
 
 
 
