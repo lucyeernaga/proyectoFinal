@@ -1,6 +1,7 @@
 /* 
 font-family: 'Poppins', sans-serif;
 font-family: 'Gabarito', serif; 
+mobile-first
 */
 
 * {
@@ -33,19 +34,19 @@ font-family: 'Gabarito', serif;
 }
 
 .header__contenido {
-    padding: 60px 20px; /* El padding ajusta el espacio alrededor del contenido para verlo de manera más clara*/
+    padding: 60px 20px; /* arriba/abajo y izq y der */
 }
 
 .header__logotipo {
     max-width: 70%; /*Para que ocupe el 50% del tamaño de la */
     margin: 0 auto;
-    display: block;
+    display: block; /* Ocupa todo el amcho que tiene disponible*/
 }
 
 .header__titulo {
     font-size: 1.6rem; /* Edita el tamaño de la fuente */
     margin-top: 20px; /* Deja un espacio debajo del párrafo para mejorar su comprensión*/
-    font-weight: 600;
+    font-weight: 600; /*El texto es un poco más grueso*/
 }
 
 .header__descripcion {
@@ -56,7 +57,6 @@ font-family: 'Gabarito', serif;
 .header__linea {
     border: 2px solid #faeae1;
     margin: 20px auto;
-    -webkit-user-drag: 20px;
 }
 
 .nav__list {
@@ -105,18 +105,60 @@ font-family: 'Gabarito', serif;
 .recetas {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
 .recetas__1, .recetas__2, .recetas__3, .recetas__4 {
-    width: 100%;
+    width: 90%;
     position: relative;
 }
 
 .receta__1, .receta__2, .receta__3, .receta__4 {
     width: 100%;
     height: auto;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
+
+.recetas__titulo {
+    color: #bf8551;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.recetas__texto {
+    color: #faeae1;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.recetas__linea {
+    border: 1px solid #faeae1;
+}
+
+.carrousel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrousel__titulo {
+    color: #faeae1;
+    font-weight: 500; 
+}
+
+.carrousel__imagenes {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+}
+
+
 
 
 
