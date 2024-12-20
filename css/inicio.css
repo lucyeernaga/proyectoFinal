@@ -28,6 +28,7 @@
     left: 0; /* Para que vaya 0px a la izq*/
     z-index: -1; /* Pone la imagen detrás del contenido del header*/
     object-fit: cover; /* Para que la imagen cubra todo el header en cualquier pantalla*/
+    /* hacerle una sombra por debajo */
 }
 
 .header__contenido {
