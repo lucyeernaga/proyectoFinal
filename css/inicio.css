@@ -188,7 +188,7 @@
     max-width: 250px;
     border-radius: 9px;
     box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease-out;
 }
 
 .carrousel__img:hover {
@@ -213,6 +213,12 @@
     color: #faeae1;
     cursor: pointer;
     font-size: 0.9rem;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.carrousel__btn--izq:hover,
+.carrousel__btn--der:hover {
+    background-color: #bf8551;
 }
 
 .footer {
@@ -291,7 +297,13 @@
 
 /* Media Query para móviles */
 @media screen and (max-width: 768px) {
-    
+    .carrousel__img {
+        max-width: 200px;
+    }
+
+    .carrousel__titulo {
+        font-size: 1.2rem;
+    }
 }
 
 
