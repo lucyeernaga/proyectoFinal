@@ -211,8 +211,8 @@
     border-radius: 6px;
     background-color: #5e3023;
     color: #faeae1;
-    cursor: pointer;
     font-size: 0.9rem;
+    cursor: pointer;
     transition: background-color 0.4s ease-in-out;
 }
 
@@ -232,7 +232,7 @@
 }
 
 .footer__logo--logotipo {
-    max-width: 37%; 
+    max-width: 25%; 
 }
 
 .footer__derechos {
@@ -264,21 +264,22 @@
 
 
 
-
-/* Media Query para pantallas grandes */
-
-
-
-
-
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
+    .body {
+        background-color: #27201e;
+    }
     .header {
         padding: 40px 20px;
     }
 
+    .header__imagen img {
+        width: 100%;
+        height: 100%;
+    }
+
     .header__logo img {
-        width: 100px;
+        width: 40%;
     }
 
     .header__titulo {
@@ -288,11 +289,79 @@
     .header__descripcion {
         font-size: 1.5rem;
     }
+
+    .carrousel {
+        max-width: 70%;
+    }
+
+    .carrousel__titulo {
+        margin-bottom: 18px;
+        font-size: 1.4rem;
+    }
+
+    .carrousel__imagenes {
+        gap: 13px;
+    }
+
+    .carrousel__img {
+        margin: 0 auto;
+    }
+
+    .carrousel__btn--izq,
+    .carrousel__btn--der {
+        padding: 10px 11px;
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        display: flex; /* para poner los elementos en una fila*/
+        justify-content: space-between; /* espacio entre los elementos*/
+        align-items: center; /*para poner los elementos de manera vertical*/
+        flex: wrap; /* como no caben los elementos, esto las psa a otra linea*/
+        padding: 10px 10px; 
+    }
+
+    .footer__logo {
+        flex: 1; /*el logo ocupa un espacio proporcional a el */
+        text-align: center; /* para centrar el logo*/
+        margin-bottom: 5px;
+    }
+
+    .footer__derechos {
+        flex: 1;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .footer__menu {
+        flex: 1;
+        display: flex;
+        justify-content: center; /* centra el menú horizontalmente*/
+        gap: 20px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%; 
+    }
 }
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4 {
+        width: 60%;
+    }
+
+    .carrousel {
+        max-width: 80%;
+    }
+
+    .footer {
+        padding: 30px 20px; 
+    }
+
+    .footer__logo--logotipo {
+        max-width: 18%; 
+    }
 }
 
 /* Media Query para móviles */
@@ -303,6 +372,10 @@
 
     .carrousel__titulo {
         font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 30px 20px; 
     }
 }
 
