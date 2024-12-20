@@ -1,9 +1,3 @@
-/* 
-font-family: 'Poppins', sans-serif;
-font-family: 'Gabarito', serif; 
-mobile-first
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,51 +19,43 @@ mobile-first
 
 .header__imagen img {
     width: 100%; 
-    height: 400px; 
+    height: 200px; 
     position: absolute; /* Es para que la imagen quede atrás del todo, coloca los elementos que tenga más cerca alguna position*/
     top: 0; /* Para que vaya 0px arriba */
     left: 0; /* Para que vaya 0px a la izq*/
     z-index: -1; /* Pone la imagen detrás del contenido del header*/
     object-fit: cover; /* Para que la imagen cubra todo el header en cualquier pantalla*/
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
 }
 
 .header__contenido {
-    padding: 60px 20px; /* arriba/abajo y izq y der */
+    padding: 30px 20px; /* arriba/abajo y izq y der */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .header__logotipo {
-    max-width: 70%; /*Para que ocupe el 50% del tamaño de la */
+    max-width: 47%; /*Para que ocupe el 50% del tamaño de la */
     margin: 0 auto;
     display: block; /* Ocupa todo el amcho que tiene disponible*/
 }
 
-.header__titulo {
-    font-size: 1.6rem; /* Edita el tamaño de la fuente */
-    margin-top: 20px; /* Deja un espacio debajo del párrafo para mejorar su comprensión*/
-    font-weight: 600; /*El texto es un poco más grueso*/
-}
-
-.header__descripcion {
-    font-size: 0.9rem; 
-    margin-bottom: 20px; 
-}
-
-.header__linea {
+/* .header__linea {
     border: 2px solid #faeae1;
     margin: 20px auto;
-}
+    width: 80%;
+} */
 
 .nav__list {
     display: flex; /* Hace que el contenido/elementos sea flexible*/
-    flex-direction: row;
     justify-content: center; /* Centra los elementos horizonralmente*/
     list-style: none; /* Elimina estilos (los puntos) a la lista */
-    gap: 9px; /* Espacio entre los elementos*/
 }
 
 .nav__item {
     margin: 7px 0;
-    text-align: center;
 }
 
 .nav__item a {
@@ -82,16 +68,12 @@ mobile-first
 }
 
 .nav__item a:hover {
-    background-color: #bf8551;
+    background-color: #bf8551; /* este es el color al que cambia cuando pones encima el ratón*/
     color: beige; /* Cambia el color del texto al pasar pro encima el ratón*/
 }
 
-.main {
-    padding: 20px;
-}
-
 .main__container {
-    width: 100%;
+    width: 70%;
     max-width: 1200px; /* Ajusta el tamaño max del contenedor */
     margin: 0 auto;
 }
@@ -114,7 +96,6 @@ mobile-first
 
 .recetas__1, .recetas__2, .recetas__3, .recetas__4 {
     width: 90%;
-    position: relative;
 }
 
 .receta__1, .receta__2, .receta__3, .receta__4 {
@@ -137,7 +118,6 @@ mobile-first
     color: #faeae1;
     font-size: 0.8rem;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .recetas__linea {
@@ -180,10 +160,6 @@ mobile-first
     position: static;
 }
 
-.footer__logo--logotipo {
-    max-width: 37%; 
-}
-
 .footer__derechos {
     font-size: 0.8rem;
 }
@@ -210,22 +186,117 @@ mobile-first
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
-
+    .footer__logo--logotipo {
+        max-width: 13%; 
+    }
     
 }
 
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
+    .header__logotipo {
+        max-width: 45%;
+        text-align: left; 
+    }
+
+    .nav__icono {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header__linea {
+        width: 40%;
+        border: 1.2px solid #faeae1;
+        margin: 4px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 20%; 
+    }
 
 }
 
 
 /* Media Query para móviles */
 @media screen and (max-width: 768px) {
+    .header__imagen img {
+        width: 100%; 
+        height: 259px; 
+    }
 
+    .header__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
+    /* Con estas propiedades coloco el logo a la izquierda */
+    .header__logotipo {
+        max-width: 40%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: left; 
+    }
+
+    .nav__icono {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        padding: 20px;
+        font-size: 2rem;
+        color: #faeae1;
+    }
+
+    .header__titulo {
+        font-size: 1.4rem; /* Edita el tamaño de la fuente */
+        margin-top: 20px; /* Deja un espacio debajo del párrafo para mejorar su comprensión*/
+        font-weight: 450; /*El texto es un poco más grueso*/
+    }
+
+    .header__descripcion {
+        font-size: 0.9rem; 
+        margin-bottom: 5px;
+    }
+
+    .header__linea {
+        border: 1.6px solid #faeae1;
+        width: 40%;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .main__container {
+        width: 100%;
+        max-width: 768px; /* Ajusta el tamaño max del contenedor */
+        margin: 0 auto;
+    }
+
+    .carrousel__img {
+        max-width: 200px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 37%; 
+    }
 }
 
 
