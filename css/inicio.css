@@ -98,8 +98,10 @@ mobile-first
 
 .main__titulo {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: #bf8551;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .recetas {
@@ -128,7 +130,7 @@ mobile-first
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .recetas__texto {
@@ -140,29 +142,67 @@ mobile-first
 
 .recetas__linea {
     border: 1px solid #faeae1;
+    margin: 30px 10px;
 }
 
 .carrousel {
     text-align: center;
-    margin-top: 20px;
+    padding: 10px 20px;
 }
 
 .carrousel__titulo {
-    color: #faeae1;
-    font-weight: 500; 
+    margin-bottom: 20px;
+    color: #bf8551;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .carrousel__imagenes {
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
+.carrousel__img {
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.7);
+}
 
+.footer {
+    background-color: #1a1716;
+    color: #faeae1;
+    padding: 30px 20px; /* 40 arriba y 20 izq y der*/
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    position: static;
+}
 
+.footer__logo--logotipo {
+    max-width: 37%; 
+}
 
+.footer__derechos {
+    font-size: 0.8rem;
+}
 
+.footer__menu {
+    list-style: none;
+    padding: 15px;
+}
 
+.footer__menu a {
+    text-decoration: none;
+    color: #faeae1;
+    font-size: 0.8rem;
+}
+
+.footer__menu a:hover {
+    text-decoration: dashed;
+    color: #bf8551;
+}
 
 /* Media Query para pantallas grandes */
 
