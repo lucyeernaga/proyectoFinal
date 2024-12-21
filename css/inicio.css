@@ -1,4 +1,10 @@
-/* estilos generales, movile first */
+/* estilos generales, movile first 
+* #faeae1
+* #5e3023
+* bf8551
+* #000000 */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -279,15 +285,15 @@
     }
 
     .header__logo img {
-        width: 40%;
+        width: 50%;
     }
 
     .header__titulo {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .header__descripcion {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .carrousel {
@@ -314,7 +320,7 @@
     }
 
     .footer {
-        display: flex; /* para poner los elementos en una fila*/
+        display: flex; 
         justify-content: space-between; /* espacio entre los elementos*/
         align-items: center; /*para poner los elementos de manera vertical*/
         flex: wrap; /* como no caben los elementos, esto las psa a otra linea*/
