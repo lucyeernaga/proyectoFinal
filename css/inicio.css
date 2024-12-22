@@ -303,8 +303,71 @@
         font-size: 1.2rem;
     }
 
+    .recetas {
+        display: grid; /* 2x2*/
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: 
+            "receta1 receta2"
+            "receta3 receta4";
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 90%
+    }
+
+    .recetas__1 {
+        grid-area: receta1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recetas__2 {
+        grid-area: receta2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recetas__3 {
+        grid-area: receta3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recetas__4 {
+        grid-area: receta4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recetas img {
+        width: 100%; /* Adapta el ancho al contenedor */
+        height: auto; /* Mantiene la proporción */
+        border-radius: 6px;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7); 
+    }
+
+    .recetas__texto {
+        text-align: center;
+    }
+
+    .recetas__linea {
+        width: 90%;
+        margin: 5px 5px;
+    }
+
     .carrousel {
         max-width: 70%;
+        margin: 20px auto;
     }
 
     .carrousel__titulo {
@@ -313,6 +376,7 @@
     }
 
     .carrousel__imagenes {
+        display: flex;
         gap: 13px;
     }
 
