@@ -87,6 +87,33 @@ PODRIA SER PARA UN SLIDER DE RESEÑAS
                     </section>
                     <img class="slider__arrow" src="assets/rigthArrow.svg" id="after" alt="Slider arrow izq">
                     </div>
+
+
+
+
+
+
+
+
+<!-- Confirmar Contraseña -->
+<label for="pass2">Confirmar Contraseña</label>
+                            <input type="password" name="pass" id="pass2" required>
+        
+<!-- Edad -->
+<label for="edad">Edad</label>
+<input type="number" name="edad" id="edad" required>
+        
+<!-- Género -->
+<div>
+    <input type="radio" name="gender" value="male"> Hombre
+    <input type="radio" name="gender" value="female"> Mujer
+ </div>
+
+
+
+
+
+
                     
                     
 </section>
