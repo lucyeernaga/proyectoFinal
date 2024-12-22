@@ -12,26 +12,20 @@ Sumado a esto, otra etiqueta clave es `<a href=""></a>` ya que crea enlaces para
 
 
 
+hola, estoy haciendo  un trabajo muy importante pero hay cosas que no se hacer, necesito que escribas el codigo como si fueras una persona que no tiene mucha experiencia en diseñar webs pero haciendo bien las cosas y de manera estructurada
 
 
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('nav--activo');
+    }
+</script>
 
 
-
-
-
-
-
-
-
-
-
- 
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    margin: 1em;*/
+<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+<i class="fa fa-external-link-square" aria-hidden="true"></i>
 
 
 
@@ -42,21 +36,110 @@ Sumado a esto, otra etiqueta clave es `<a href=""></a>` ya que crea enlaces para
 #bf8551
 #000000
 
-
-
-
-
-## foto pastel limon
-Opción con rotación de 90 grados (si deseas rotar completamente la imagen en lugar de reflejarla):
-Si lo que quieres es rotar la imagen 90 grados (de vertical a horizontal), puedes usar esta propiedad CSS:
-
-css
-Copiar código
 img {
     transform: rotate(90deg);
     /* Asegúrate de ajustar el tamaño también si es necesario */
     width: auto;
     height: 100%;
 }
-rotate(90deg); rota la imagen 90 grados en sentido horario.
-Puedes ajustar las propiedades width y height para asegurarte de que la imagen se vea correctamente después de la rotación.
+
+
+
+PODRIA SER PARA UN SLIDER DE RESEÑAS
+<section class="slider">
+                    <div class="slider__container container">
+                    <img class="slider__arrow" src="assets/leftArrow.svg" id="before" alt="Slider arrow izq">
+
+                    <section class="slider__imagenes slider__imagenes--ver" data-id="1">
+                        <figure class="slider__imgs">
+                            <img src="assets/corderoAsado.jpg" class="slider__img" alt="Imagen 1">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="2">
+                        <figure class="slider__imgs">
+                            <img src="assets/canapesPepino.jpg" class="slider__img" alt="Imagen 2">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="3">
+                        <figure class="slider__imgs">
+                            <img src="assets/sorbeteLimon.jpg" class="slider__img" alt="Imagen 3">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="4">
+                        <figure class="slider__imgs">
+                            <img src="assets/canapeGulas.jpg" class="slider__img" alt="Imagen 4">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="5">
+                        <figure class="slider__imgs">
+                            <img src="assets/tablaQuesos.jpg" class="slider__img" alt="Imagen 5">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="6">
+                        <figure class="slider__imgs">
+                            <img src="assets/tortillaPatatas.jpg" class="slider__img" alt="Imagen 6">
+                        </figure>
+                    </section>
+                    <img class="slider__arrow" src="assets/rigthArrow.svg" id="after" alt="Slider arrow izq">
+                    </div>
+                    
+                    
+</section>
+
+```css
+.container  {
+        width: 90%;
+        max-width: 100%;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .slider {
+        padding: 40px 0; /* 40px arriba y abajo, y 0 hacia los lados*/
+    }
+
+    .slider__container {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px; /* quiero tener 3 columnas, para poner la flecha a un lado, el contenido en medio y la otra flecha al otro lado*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+    }
+
+    .slider__imagenes {
+        grid-column: 2/3; /* todas las imgs con .slider__imagenes empiezan en la columna 2 y acaben en la 3*/
+        grid-row: 1/2; /*como solo hay una linea, las imgs empiezan en la 1 y acaban en la 2*/
+        opacity: 0; /* para que no se vean las imagenes, pq quiero que se vea primero la 1*/
+        transition: opacity 1s ease;
+    }
+
+    .slider__imagenes--ver {
+        opacity: 1;
+    }
+
+    .slider__imgs {
+        max-width: 300px;
+    }
+
+    .slider__img {
+        width: 300px;
+        height: 200px;
+        border-radius: 7px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slider__arrow {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+```

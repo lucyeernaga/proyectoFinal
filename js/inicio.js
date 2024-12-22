@@ -56,18 +56,27 @@
 
 
 
-let carrouselImagenes = document.querySelector(".carrousel__imagenes"); 
+// let carrouselImagenes = document.querySelector(".carrousel__imagenes"); 
 
-let images = carrouselImagenes.querySelectorAll(".carrousel__img");
+// let images = carrouselImagenes.querySelectorAll(".carrousel__img");
 
-let index = 1;
+// let index = 1;
 
-setInterval(function () {
-    let porcentaje = index * -100;
-    carrouselImagenes.style.transform = 
-    "translateX(" + porcentaje + "% )";
-    index++;
-    if (index > images.length -1) {
-        index = 0;
-    }
-}, 5000);
+// setInterval(function () {
+//     let porcentaje = index * -100;
+//     carrouselImagenes.style.transform = 
+//     "translateX(" + porcentaje + "% )";
+//     index++;
+//     if (index > images.length -1) {
+//         index = 0;
+//     }
+// }, 5000); // aqui le puse que cambie cada 5 segundos para ver las imagenes mas lentas
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.header__menu--btn');
+    const navMenu = document.querySelector('.nav');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('nav--activo');
+    });
+});
