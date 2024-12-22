@@ -208,7 +208,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+  
 }
 
 .carrousel__btn--izq,
@@ -289,6 +289,12 @@
         width: 50%;
     }
 
+    .header__menu--btn {
+        font-size: 2rem;
+        top: 50px;
+        right: 40px;
+    }
+
     .header__titulo {
         font-size: 1.8rem;
     }
@@ -354,6 +360,11 @@
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__menu--btn {
+        font-size: 1.7rem;
+        top: 30px;
+    }
+
     .recetas__1, .recetas__2, .recetas__3, .recetas__4 {
         width: 60%;
     }
@@ -373,6 +384,10 @@
 
 /* Media Query para móviles */
 @media screen and (max-width: 768px) {
+    .header__menu--btn {
+        top: 35px;
+    }
+
     .carrousel__img {
         max-width: 200px;
     }
