@@ -172,61 +172,13 @@
     margin: 30px 10px;
 }
 
-.carrousel {
-    margin: 20px;
-    max-width: 90%;
-    position: relative;
-}
 
-.carrousel__titulo {
+/* .slider__titulo {
     margin-bottom: 20px;
     color: #bf8551;
     font-size: 1.5rem;
     font-weight: 600;
-}
-
-.carrousel__imagenes {
-    display: flex;
-    gap: 10px;
-    transition: transform 0.5s ease;
-}
-
-.carrousel__img {
-    max-width: 400px;
-    border-radius: 9px;
-    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.7);
-    transition: transform 0.4s ease-out;
-}
-
-.carrousel__img:hover {
-    transform: scale(1.05);
-}
-
-.carrousel__btn {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  
-}
-
-.carrousel__btn--izq,
-.carrousel__btn--der {
-    padding: 9px 11px; /*arriba abajo, der izq*/
-    border: none;
-    border-radius: 6px;
-    background-color: #5e3023;
-    color: #faeae1;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.4s ease-in-out;
-}
-
-.carrousel__btn--izq:hover,
-.carrousel__btn--der:hover {
-    background-color: #bf8551;
-}
+} */
 
 .footer {
     background-color: #1a1716;
@@ -304,6 +256,16 @@
     }
 
     .recetas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: start;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .recetas__grid {
         display: grid; /* 2x2*/
         grid-template-columns: repeat(2, 1fr);
 
@@ -311,42 +273,35 @@
             "receta1 receta2"
             "receta3 receta4";
         gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 90%
     }
-
+    
     .recetas__1 {
         grid-area: receta1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
     }
 
     .recetas__2 {
         grid-area: receta2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
     }
 
     .recetas__3 {
         grid-area: receta3;
+    }
+
+    .recetas__4 {
+        grid-area: receta4;
+    }
+    
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4 {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .recetas__4 {
-        grid-area: receta4;
+    .receta__1, .receta__2, .receta__3, .receta__4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .recetas img {
@@ -365,29 +320,35 @@
         margin: 5px 5px;
     }
 
-    .carrousel {
-        max-width: 70%;
-        margin: 20px auto;
-    }
-
-    .carrousel__titulo {
-        margin-bottom: 18px;
-        font-size: 1.4rem;
-    }
-
-    .carrousel__imagenes {
-        display: flex;
-        gap: 13px;
-    }
-
-    .carrousel__img {
+    .container  {
+        width: 90%;
+        min-height: 100vh;
+        max-width: 100%;
         margin: 0 auto;
+        overflow: hidden;
     }
 
-    .carrousel__btn--izq,
-    .carrousel__btn--der {
-        padding: 10px 11px;
-        font-size: 1.1rem;
+    .slider {
+        padding: 40px 0; /* 40px arriba y abajo, y 0 hacia los lados*/
+    }
+
+    .slider__container {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px; /* quiero tener 3 columnas, para poner la flecha a un lado, el contenido en medio y la otra flecha al otro lado*/
+    }
+
+    .slider__imagenes {
+        grid-column: 2/3; /* todas las imgs con .slider__imagenes empiezan en la columna 2 y acaben en la 3*/
+        grid-row: 1/2; /*como solo hay una linea, las imgs empiezan en la 1 y acaban en la 2*/
+        opacity: 0; /* para que no se vean las imagenes, pq quiero que se vea primero la 1*/
+    }
+
+    .slider__imagenes--ver {
+        opacity: 1;
+    }
+
+    .slider__img {
+        width: 50%;
     }
 
     .footer {
@@ -433,10 +394,6 @@
         width: 60%;
     }
 
-    .carrousel {
-        max-width: 80%;
-    }
-
     .footer {
         padding: 30px 20px; 
     }
@@ -450,14 +407,6 @@
 @media screen and (max-width: 768px) {
     .header__menu--btn {
         top: 35px;
-    }
-
-    .carrousel__img {
-        max-width: 200px;
-    }
-
-    .carrousel__titulo {
-        font-size: 1.2rem;
     }
 
     .footer {

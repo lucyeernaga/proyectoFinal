@@ -58,7 +58,7 @@
         <div class="main__container">
             <h1 class="main__titulo">Especialidades de la casa</h1>
 
-            <section class="recetas"> <!-- He usado <section> en varias ocasiones porque me ayuda tener bien definidas las tres partes del main -->
+            <section class="recetas recetas__grid"> <!-- He usado <section> en varias ocasiones porque me ayuda tener bien definidas las tres partes del main -->
                 <picture class="recetas__1">
                     <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg">
                     <source media="(min-width: 768px)" srcset="img/espaguetis.jpg">
@@ -94,23 +94,57 @@
                     <p class="recetas__texto">Está claro que la tortilla de patatas le queda bien a todas las abuelas, pero aquí os dejamos nuestra receta familiar de tortilla de patatas española que queda súper sabrosa y jugosa. ¡No os arrepentireis!</p>
                     <hr class="recetas__linea">
                 </picture>
-
-                <section class="carrousel">
-                    <h2 class="carrousel__titulo">Más recetas ...</h2>
-                    <div class="carrousel__imagenes">
-                        <a href="#"><img class="carrousel__img" src="img/corderoAsado.jpg" alt="Imagen 1"></a>
-                        <a href="#"><img class="carrousel__img" src="img/sorbeteLimon.jpg" alt="Imagen 2"></a>
-                        <a href="#"><img class="carrousel__img" src="img/canapesPepino.jpg" alt="Imagen 3"></a>
-                        <a href="#"><img class="carrousel__img" src="img/tablaQuesos.jpg" alt="Imagen 4"></a>
-                        <a href="#"><img class="carrousel__img" src="img/canapeGulas.jpg" alt="Imagen 5"></a>
-                        <a href="#"><img class="carrousel__img" src="img/tortillaPatatas.jpg" alt="Imagen 6"></a>
-
-                        <div class="carrousel__btn">
-                            <button class="carrousel__btn--izq" id="btnAnt">Anterior</button>
-                            <button class="carrousel__btn--der" id="btnSig">Siguiente</button>
-                        </div>
-                    </section>
             </section>
+
+                <section class="recetas__comentarios">
+
+                </section>
+
+                <section class="slider">
+                    <div class="slider__container container">
+                    <h2 class="slider__titulo">Más recetas ...</h2>
+                    <img class="slider__arrow" src="assets/leftArrow.svg" id="before" alt="Slider arrow izq">
+
+                    <section class="slider__imagenes slider__imagenes--ver" data-id="1">
+                        <figure class="slider__imgs">
+                            <img src="assets/corderoAsado.jpg" class="slider__img" alt="Imagen 1">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="2">
+                        <figure class="slider__imgs">
+                            <img src="assets/canapesPepino.jpg" class="slider__img" alt="Imagen 2">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="3">
+                        <figure class="slider__imgs">
+                            <img src="assets/sorbeteLimon.jpg" class="slider__img" alt="Imagen 3">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="4">
+                        <figure class="slider__imgs">
+                            <img src="assets/canapeGulas.jpg" class="slider__img" alt="Imagen 4">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="5">
+                        <figure class="slider__imgs">
+                            <img src="assets/tablaQuesos.jpg" class="slider__img" alt="Imagen 5">
+                        </figure>
+                    </section>
+
+                    <section class="slider__imagenes" data-id="6">
+                        <figure class="slider__imgs">
+                            <img src="assets/tortillaPatatas.jpg" class="slider__img" alt="Imagen 6">
+                        </figure>
+                    </section>
+                    <img class="slider__arrow" src="assets/rigthArrow.svg" id="after" alt="Slider arrow izq">
+                    </div>
+                    
+                    
+                </section>
         </div>
     </main>
 
