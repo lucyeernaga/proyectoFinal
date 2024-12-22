@@ -114,25 +114,21 @@
             <section class="comentarios">
                 <div class="comentarios__inicio">
                     <form action="/procesar-comentarios" method="post" enctype="multipart/form-data">
-                        <fieldset>
+                        <fieldset class="comentarios__fieldset">
                             <!-- Nombre -->
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                            <label class="comentarios__label" for="nombre">Nombre</label>
+                            <input class="comentarios__input" type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
 
                             <!-- Email -->
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" required placeholder="Escribe tu email">
-
-                            <!-- Contraseña -->
-                            <label for="comentarios">Tu comentario</label>
-                            <textarea name="comentarios" id="comentarios" required placeholder="Escribe tu comentario aquí"></textarea>
-
-                            <!-- Subir archivo -->
-                            <label for="archivo">Subir foto</label>
-                            <input type="file" name="archivo" id="archivo" placeholder="Sube tu receta!!" accept=".jpg,.jpeg,.png,.pdf">
+                            <label class="comentarios__label" for="email">Email</label>
+                            <input class="comentarios__input" type="text" name="email" id="email" required placeholder="Escribe tu email">
+                            
+                            <!-- Comentario-->
+                            <label class="comentarios__label" for="comentarios">Tu comentario</label>
+                            <textarea class="comentarios__textarea" name="comentarios" id="comentarios" required placeholder="Escribe tu comentario aquí"></textarea>
 
                             <!-- Enviar -->
-                            <input type="submit" value="enviar comentario">
+                            <input class="comentarios__input" type="submit" value="enviar comentario">
                         </fieldset>
                     </form>
                 </div>
@@ -155,7 +151,7 @@
             <li><a href="#" target="_blank">Aviso Legal</a></li>
         </ul>
     </footer>
-    <script src="js/inicio.js"></script>
+    <script src="./js/inicio.js" defer></script>
 
 </body>
 
