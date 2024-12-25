@@ -151,6 +151,58 @@
     font-weight: 300;
 }
 
+.slider {
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__foto {
+    min-width: 100%;
+}
+
+.slider__foto1, .slider__foto2{
+    width: 100%;
+    display: block;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5e3023;
+    font-weight: 400;
+    padding: 10px;
+    background-color: beige;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    transition: background-color .5s ease;
+}
+
+.slider__btn:hover {
+    background-color: rgb(94, 48, 35);
+    color: #faeae1;
+}
+
+.slider__btn--prev {
+    left: 30px;
+    border-radius: 6px;
+}
+
+.slider__btn--next {
+    right: 10px;
+    border-radius: 6px;
+}
+
+
 .footer {
     background-color: #1a1716;
     color: #faeae1;
