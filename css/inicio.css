@@ -206,7 +206,7 @@
 .comentarios__fieldset {
     border: 1px solid #bf8551; /*le he puesto una linea de borde para que quede mejor el diseño */
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .comentarios__label {
