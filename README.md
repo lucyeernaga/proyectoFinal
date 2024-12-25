@@ -120,18 +120,6 @@ PODRIA SER PARA UN SLIDER DE RESEÑAS
                     
 </section>
 
-```css
-.container  {
-        width: 90%;
-        max-width: 100%;
-        margin-top: 10px;
-        overflow: hidden;
-    }
-
-    .slider {
-        padding: 40px 0; /* 40px arriba y abajo, y 0 hacia los lados*/
-    }
-
     .slider__container {
         display: grid;
         grid-template-columns: 50px 1fr 50px; /* quiero tener 3 columnas, para poner la flecha a un lado, el contenido en medio y la otra flecha al otro lado*/
@@ -148,86 +136,3 @@ PODRIA SER PARA UN SLIDER DE RESEÑAS
         opacity: 0; /* para que no se vean las imagenes, pq quiero que se vea primero la 1*/
         transition: opacity 1s ease;
     }
-
-    .slider__imagenes--ver {
-        opacity: 1;
-    }
-
-    .slider__imgs {
-        max-width: 300px;
-    }
-
-    .slider__img {
-        width: 300px;
-        height: 200px;
-        border-radius: 7px;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .slider__arrow {
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-    }
-```
-
-
-
-````js
-// // -------------------------------------------------------------------
-// // 1. Declaramos constantes y variables
-// // -------------------------------------------------------------------
-
-// // Selecciono el contenedor de imágenes del carrusel del HTML y también las propias imagenes
-// const sliderImages = document.querySelector('.carrousel__imagenes'); 
-// const images = document.querySelectorAll('.carrousel__img');
-// // Selecciono los botones con ids 
-// const btnNext = document.querySelector('#btnSig');
-// const btnPrev = document.querySelector('#btnAnt'); 
-
-// // variable para saber que imagen se muestra 
-// let currentImageIndex = 0; // para empezar en la imagen 1
-// const totalImages = images.length; // es el total de todas las imagenes
-
-
-
-// // -------------------------------------------------------------------
-// // 2. Events y funciones
-// // -------------------------------------------------------------------
-
-// // eventListener btn "Siguiente"
-// btnNext.addEventListener('click', nextImage);
-
-// // eventListener btn "Anterior"
-// btnPrev.addEventListener('click', prevImage);
-
-// // para pasar de la imagen 1 a la siguiente
-// function nextImage() {
-//     currentImageIndex++; // + indice
-//     if (currentImageIndex >= totalImages) {
-//         currentImageIndex = 0; // si llega a la imagen 6, vuelve a la 1
-//     }
-//     actualizarSlider();
-// }
-
-// // para ir a la imagen anterior
-// function prevImage() {
-//     currentImageIndex--; // - indice
-//     if (currentImageIndex < 0) {
-//         currentImageIndex = totalImages - 1; // Si está en la primera, vuelve a la última
-//     }
-//     actualizarSlider();
-// }
-
-// // para actualizar donde está (la posición) del slider
-// function actualizarSlider() {
-//     const movimiento = currentImageIndex * -100; 
-//     sliderImages.style.transform = `translateX(${movimiento}%)`;
-// }
-
-// // -------------------------------------------------------------------
-// // 3. Inicializamos el slider
-// // -------------------------------------------------------------------
-// actualizarSlider();
