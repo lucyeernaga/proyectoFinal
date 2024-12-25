@@ -54,3 +54,13 @@ actualizarSlider(); // Llamamos la función para mostrar la primera imagen al ca
 
 
 
+document.getElementById("btnExpandir").addEventListener("click", function() {
+    var texto2 = document.querySelector(".texto2");
+    if (texto2.style.display === "none" || texto2.style.display === "") {
+        texto2.style.display = "block";  // Muestra el texto
+        this.textContent = "Leer menos";    // Cambia el texto del botón
+    } else {
+        texto2.style.display = "none";   // Oculta el texto
+        this.textContent = "Leer más";      // Cambia el texto del botón
+    }
+});

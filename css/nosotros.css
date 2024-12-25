@@ -80,7 +80,7 @@
     width: 100px;
     padding: 10px;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 99;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -149,6 +149,28 @@
     color:white;
     font-size: 0.8rem;
     font-weight: 300;
+}
+
+.texto2 {
+    display: none;
+}
+
+.btn__expandir {
+    background-color: #bf8551;
+    color: #faeae1;
+    border: none;
+    font-weight: 550;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    margin-top: 20px;
+}
+
+.btn-expandir:hover {
+    background-color: #faeae1;
+    color: #bf8551;
 }
 
 .slider {
