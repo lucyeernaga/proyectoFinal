@@ -13,7 +13,7 @@
 
 .body {
     font-family: 'Poppins', sans-serif;
-    background-color: #2d2826;
+    background-color: #37302e;
     color: #faeae1;
     line-height: 1.5;
 
@@ -23,7 +23,7 @@
     position: relative;
     text-align: center;
     padding: 20px 10px;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .header__imagen img {
@@ -131,8 +131,8 @@
     padding: 20px 10px;
     max-width: 1200px;
     margin: 0 auto;
-    color: beige;
-    background-color: #27201e;
+    color:  beige;
+    background-color: #37302e;
 }
 
 .main__titulo {
@@ -142,6 +142,12 @@
     padding: 20px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.main__historia {
+    padding: 20px;
+    color:beige;
+    font-size: 0.8rem;
 }
 
 .footer {
@@ -190,7 +196,7 @@
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
     .body {
-        background-color: #27201e;
+        background-color: #37302e;
     }
 
     .header {

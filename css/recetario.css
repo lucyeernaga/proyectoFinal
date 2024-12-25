@@ -13,7 +13,7 @@
 
 .body {
     font-family: 'Poppins', sans-serif;
-    background-color: #2d2826;
+    background-color: #37302e;
     color: #faeae1;
     line-height: 1.5;
 
@@ -132,7 +132,7 @@
     max-width: 1200px;
     margin: 0 auto;
     color: beige;
-    background-color: #27201e;
+    background-color: #37302e;
 }
 
 .main__titulo {
@@ -190,7 +190,7 @@
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
     .body {
-        background-color: #27201e;
+        background-color: #37302e;
     }
 
     .header {
