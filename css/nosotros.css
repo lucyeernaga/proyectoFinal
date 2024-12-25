@@ -159,6 +159,18 @@
     padding: 20px;
 }
 
+.slider__titulo {
+    font-weight: 600;
+    color: #bf8551;
+}
+
+.slider__texto {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #bf8551;
+    font-weight: 600;
+}
+
 .slider__container {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -170,7 +182,6 @@
 
 .slider__foto1, .slider__foto2{
     width: 100%;
-    display: block;
 }
 
 .slider__btn {
@@ -201,7 +212,6 @@
     right: 10px;
     border-radius: 6px;
 }
-
 
 .footer {
     background-color: #1a1716;
@@ -329,6 +339,20 @@
         font-size: 1.2rem;
     }
 
+    .slider {
+        width: 700px; /* Ajustamos el tamaño del slider para tablets */
+        margin: 30px auto;
+    }
+
+    .slider__foto {
+        width: 100%;
+    }
+
+    .slider__foto1, .slider__foto2 {
+        height: auto;
+        object-fit: cover;
+    }
+
     .footer {
         display: flex; 
         justify-content: space-between; /* espacio entre los elementos*/
@@ -382,6 +406,21 @@
     .nav__item a {
         font-size: 0.8rem;
     }
+
+    .slider {
+        width: 560px; /* Ajustamos el tamaño del slider para tablets */
+        margin: 30px auto;
+    }
+
+    .slider__foto {
+        width: 100%;
+    }
+
+    .slider__foto1, .slider__foto2 {
+        height: auto;
+        object-fit: cover;
+    }
+    
 
     .footer {
         padding: 30px 20px; 
