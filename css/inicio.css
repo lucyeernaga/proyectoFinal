@@ -1,7 +1,7 @@
 /* estilos generales, movile first 
 * #faeae1
 * #5e3023
-* bf8551
+* #bf8551
 * #000000 */
 
 
@@ -233,6 +233,23 @@
     color: #faeae1; 
     border: 1.5px solid #5e3023;
 }
+
+.banner {
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.banner__foto {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.banner__img {
+    display: block;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
 
 .footer {
     background-color: #1a1716;
