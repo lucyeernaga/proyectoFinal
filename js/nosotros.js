@@ -54,13 +54,66 @@ actualizarSlider(); // Llamamos la función para mostrar la primera imagen al ca
 
 
 
-document.getElementById("btnExpandir").addEventListener("click", function() {
-    var texto2 = document.querySelector(".texto2");
-    if (texto2.style.display === "none" || texto2.style.display === "") {
-        texto2.style.display = "block";  // Muestra el texto
-        this.textContent = "Leer menos";    // Cambia el texto del botón
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Botón leer más , leer menos
+
+// -------------------------------------------------------------------
+// 1. Declaramos constantes y variables
+// -------------------------------------------------------------------
+
+// Seleccionamos el botón y el texto a mostrar/ocultar
+const btnExpandir = document.getElementById("btnExpandir");
+const texto2 = document.querySelector(".texto2");
+
+// -------------------------------------------------------------------
+// 2. Eventos y funciones
+// -------------------------------------------------------------------
+
+// EventListener para el botón "Leer más"
+btnExpandir.addEventListener("click", alternarTexto);
+
+// Función para alternar la visibilidad del texto
+function alternarTexto() {
+    const textoVisible = texto2.style.display === "block";
+
+    if (textoVisible) {
+        ocultarTexto();
     } else {
-        texto2.style.display = "none";   // Oculta el texto
-        this.textContent = "Leer más";      // Cambia el texto del botón
+        mostrarTexto();
     }
-});
+}
+
+// Función para mostrar el texto
+function mostrarTexto() {
+    texto2.style.display = "block";
+    btnExpandir.textContent = "Leer menos";
+}
+
+// Función para ocultar el texto
+function ocultarTexto() {
+    texto2.style.display = "none";
+    btnExpandir.textContent = "Leer más";
+}
+
+// -------------------------------------------------------------------
+// 3. Inicializamos el estado inicial
+// -------------------------------------------------------------------
+ocultarTexto(); // Ocultamos el texto al cargar la página
