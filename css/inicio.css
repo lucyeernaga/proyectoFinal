@@ -130,9 +130,9 @@
 .main {
     padding: 20px 10px;
     max-width: 1200px;
-    margin: 0 auto;
     color: beige;
     background-color: #27201e;
+    margin: 0 auto;
 }
 
 .main__titulo {
@@ -235,21 +235,19 @@
 }
 
 .banner {
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%;
 }
 
 .banner__foto {
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    height: auto;
 }
 
 .banner__img {
+    width: 100%;
+    height: 200px; 
     display: block;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción */
 }
-
 
 .footer {
     background-color: #1a1716;
@@ -298,6 +296,7 @@
 @media screen and (min-width: 1024px) {
     .body {
         background-color: #27201e;
+        overflow-x: hidden;
     }
 
     .header {
@@ -380,6 +379,8 @@
     .recetas {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: flex-start;
         gap: 20px;
         justify-content: center;
         align-items: start;
@@ -434,8 +435,11 @@
     .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8  {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 10px;
+        position: relative;
+        left: 170px;
     }
 
     .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
@@ -458,6 +462,33 @@
     .recetas__linea {
         width: 90%;
         margin: 5px 5px;
+    }
+
+    .main {
+        padding: 0px; 
+        margin: 0;
+    }
+
+    .main__titulo {
+        position: relative;
+        left: 150px;
+        margin-top: 30px;
+    }
+
+    .comentarios {
+        position: relative;
+        left: 170px;
+    }
+
+    .banner {
+        width: 100%; 
+    }
+
+    .banner__img {
+        height: auto; 
+        width: 100em;
+        height: 200px;
+        object-fit: cover;
     }
 
     .footer {
@@ -514,6 +545,18 @@
         font-size: 0.8rem;
     }
     
+    .main {
+        padding: 0px; 
+    }
+
+    .banner {
+        width: 100%; 
+    }
+
+    .banner__img {
+        height: auto; 
+        width: 900px;
+    }
 
     .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8  {
         width: 60%;
@@ -537,6 +580,19 @@
     .header__menu--btn {
         top: 35px;
         padding: 10px;
+    }
+
+    .main {
+        padding: 0; 
+    }
+
+    .banner {
+        padding-bottom: 40px;
+        padding-top: 40x;
+    }
+
+    .banner__img {
+        object-fit: cover; 
     }
 
     .nav__list {
