@@ -16,7 +16,6 @@
     background-color: #37302e;
     color: #faeae1;
     line-height: 1.5;
-
 }
 
 .header {
@@ -144,6 +143,8 @@
     text-align: center;
 }
 
+
+
 .footer {
     background-color: #1a1716;
     color: #faeae1;
@@ -268,6 +269,46 @@
 
     .header__descripcion {
         font-size: 1.2rem;
+    }
+
+    .main__recetas-otros {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+        gap: 10px; 
+        margin-top: 30px;
+    }
+
+    .recetas {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+        width: 600px;
+        padding: 20px;
+    }
+
+    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+        width: 100%;
+        height: auto;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 20px;
+    }
+    
+    .recetas__titulo{
+        color: #bf8551;
+        font-size: 1rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    .recetas__linea {
+
     }
 
     .footer {
