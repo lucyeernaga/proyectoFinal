@@ -178,7 +178,6 @@
     color: #faeae1;
     font-size: 0.8rem;
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .recetas__linea {
@@ -457,6 +456,19 @@
 
     .recetas__texto {
         text-align: center;
+    }
+
+    .receta__texto {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #faeae1;
+        transition: color 0.3s ease;
+    }
+
+    .receta__texto:hover {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #6c4c30;
     }
 
     .recetas__linea {
