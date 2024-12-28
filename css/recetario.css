@@ -311,6 +311,13 @@
         justify-content: flex-start;
     }
 
+    .receta__texto {
+        text-decoration: none;
+        margin-top: 3px;
+        font-size: 0.9rem;
+        color: #faeae1;
+    }
+
     .recetas__linea {
         margin-top: 20px;
     }
