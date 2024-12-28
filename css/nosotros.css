@@ -326,6 +326,14 @@
         right: 88px;
     }
 
+    .main {
+        margin-top: 20px;
+    }
+    
+    .main__titulo {
+        font-size: 2rem;
+    }
+
     .nav {
         top: 100px; /* Ajusta según la posición del botón */
         right: 50px;
