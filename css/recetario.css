@@ -300,15 +300,19 @@
     
     .recetas__titulo{
         color: #bf8551;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 20px;
         display: flex;
         justify-content: flex-start;
     }
 
+    .recetas__texto {
+        margin-top: 3px;
+        font-size: 0.9rem;
+    }
 
     .recetas__linea {
-
+        margin-top: 20px;
     }
 
     .footer {
