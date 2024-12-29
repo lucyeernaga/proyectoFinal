@@ -350,10 +350,6 @@
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
     }
 
-    .otros__libro-1 {
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
-    }
-
     .footer {
         display: flex; 
         justify-content: space-between; /* espacio entre los elementos*/
