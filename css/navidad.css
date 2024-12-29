@@ -127,7 +127,7 @@
 }
 
 .main {
-    padding: 20px 10px;
+    padding: 0 10px; /*20px top, bottom y 10px izq y der*/
     max-width: 1200px;
     margin: 0 auto;
     color: beige;
@@ -138,10 +138,58 @@
     font-size: 1.6rem;
     font-weight: 600;
     color: #bf8551;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding-top: 40px;
     text-align: center;
 }
+
+.main__recetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+}
+
+.recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+    width: 450px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+    width: 100%;
+    height: auto;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.recetas__titulo{
+    color: #bf8551;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ingredientes__h4 {
+    font-weight: 500;
+    color: #bf8551;
+}
+
+.ingredientes__lista {
+    font-size: 0.75rem;
+    padding: 10px 0 0 20px; /*Arriba 10px, derecha 0, abajo 0, izquiera 20px*/
+}
+
+.recetas__linea {
+    margin: 20px 0 10px 0;
+} 
 
 .footer {
     background-color: #1a1716;
@@ -235,13 +283,10 @@
     }
 
     .nav {
-        top: 100px; /* Ajusta según la posición del botón */
-        right: 50px;
-        width: 100px;
         padding: 10px;
-        border-radius: 5px;
         z-index: 1000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
     }
 
     .nav__list {
@@ -271,10 +316,64 @@
 
     .main {
         margin-top: 20px;
+        max-width: 1200px;
     }
 
     .main__titulo {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+
+    .main__recetas {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        align-items: flex-start;
+        gap: 10px; 
+        padding: 10px 0 0 10px;
+    }
+
+    .recetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+        width: 800px;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+        width: 100%;
+        height: 500px;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .recetas__titulo{
+        color: #bf8551;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ingredientes__lista {
+        font-size: 0.84rem;
+        padding: 10px 0 0 20px; /*Arriba 10px, derecha 0, abajo 0, izquiera 20px*/
+        color: white;
+    }
+
+    .receta__texto {
+        font-size: 0.9rem;
+        color: #faeae1;
+        padding-bottom: 20px;
+        width: 980px;
+    }
+
+    .recetas__linea {
+        margin-top: 20px;
     }
 
     .footer {
@@ -331,6 +430,56 @@
         font-size: 0.8rem;
     }
 
+    .main__recetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+        padding: 10px 0 0 10px;
+    }
+
+    .recetas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+        width: 550px;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+        width: 100%;
+        height: auto;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .recetas__titulo{
+        color: #bf8551;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ingredientes__lista {
+        font-size: 0.8rem;
+        padding: 10px 0 0 20px; /*Arriba 10px, derecha 0, abajo 0, izquiera 20px*/
+    }
+
+    .receta__texto {
+        font-size: 0.9rem;
+        color: #faeae1;
+        padding-bottom: 20px;
+    }
+
+    .recetas__linea {
+        margin-top: 20px;
+    }
+
     .footer {
         padding: 30px 20px; 
     }
@@ -361,8 +510,14 @@
         font-size: 0.8rem;
     }
 
-    .main__titulo {
-        font-size: 1.5rem;
+    .receta__texto {
+        font-size: 0.8rem;
+        color: #faeae1;
+        padding-bottom: 20px;
+    }
+    
+    .recetas__linea {
+        margin-top: 20px;
     }
 
     .footer {
