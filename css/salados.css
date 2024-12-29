@@ -126,14 +126,6 @@
     margin-bottom: 10px;
 }
 
-.main {
-    padding: 20px 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: beige;
-    background-color: #37302e;
-}
-
 .main__titulo {
     font-size: 1.6rem;
     font-weight: 600;
@@ -142,6 +134,7 @@
     margin-bottom: 10px;
     text-align: center;
 }
+
 
 .footer {
     background-color: #1a1716;
