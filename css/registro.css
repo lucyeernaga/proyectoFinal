@@ -143,6 +143,58 @@
     text-align: center;
 }
 
+.formulario {
+    background-color: #faeae1; 
+    color: #5e3023;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
+    max-width: 600px; 
+    margin-bottom: 50px;
+    margin: 40px auto;
+}
+
+.formulario__inicio, .formulario__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario__fieldset {
+    border: 1px solid  #5e3023; /*le he puesto una linea de borde para que quede mejor el diseño */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.formulario__label {
+    font-weight: 450;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.formulario__input {
+    width: 100%;
+    height: auto;
+    font-size: 0.7rem;
+    padding: 10px;
+    border: 1.5px solid #5e3023;
+    border-radius: 5px;
+    background-color: #3c332c;
+    color: #faeae1;
+}
+
+.formulario__input1 {
+    margin: 10px 0;
+}
+
+.formulario__textarea  {
+    height: 100px;
+    background-color: #211c1a; 
+    color: #faeae1; 
+    border: 1.5px solid #5e3023;
+}
+
 .footer {
     background-color: #1a1716;
     color: #faeae1;
@@ -275,6 +327,58 @@
 
     .main__titulo {
         font-size: 1.7rem;
+    }
+
+    .formulario {
+        background-color: #faeae1; 
+        color: #5e3023;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
+        max-width: 800px; 
+        margin-bottom: 50px;
+        margin: 40px auto;
+    }
+    
+    .formulario__inicio, .formulario__form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .formulario__fieldset {
+        border: 1px solid  #5e3023; /*le he puesto una linea de borde para que quede mejor el diseño */
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
+    .formulario__label {
+        font-weight: 450;
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    
+    .formulario__input {
+        width: 100%;
+        height: auto;
+        font-size: 0.7rem;
+        padding: 10px;
+        border: 1.5px solid #5e3023;
+        border-radius: 5px;
+        background-color: #3c332c;
+        color: #faeae1;
+    }
+    
+    .formulario__input1 {
+        margin: 10px 0;
+    }
+    
+    .formulario__textarea  {
+        height: 100px;
+        background-color: #211c1a; 
+        color: #faeae1; 
+        border: 1.5px solid #5e3023;
     }
 
     .footer {
