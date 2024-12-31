@@ -232,9 +232,51 @@
 
 
 
+/* Media Query para pantallas más grandes */ 
+@media screen and (min-width: 1600px) {
+    .header__imagen img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main {
+        max-width: 1600px; 
+        margin: 0 auto;
+        padding: 0 20px; 
+    }
 
+    .main__recetas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+    
 
-
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px; 
+    }
+    
+    .footer__logo--logotipo {
+        max-width: 10%; 
+    }
+    
+    .footer__menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 30px; 
+    }
+    
+    .footer__derechos {
+        text-align: right;
+    }
+    
+}
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
