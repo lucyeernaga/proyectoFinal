@@ -234,6 +234,74 @@
 
 
 
+/* Media Query para pantallas más grandes */ 
+@media screen and (min-width: 1200px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header__imagen img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .header__logo img {
+        width: 50%;
+        height: auto;
+    }
+
+    .main__titulo {
+        font-size: 2.5rem;
+    }
+
+    .main__recetas {
+        display: grid;
+        grid-template-columns: repeat(minmax(300px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+        width: 100%; 
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+        width: 100%;
+        height: auto;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%;
+    }
+    .footer__derechos, .footer__menu {
+        font-size: 1rem;
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer__menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
 
 
 
