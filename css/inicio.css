@@ -296,7 +296,7 @@
 @media screen and (min-width: 1024px) {
     .body {
         background-color: #27201e;
-        overflow-x: hidden;
+        overflow-x: hidden; /* Es para que */
     }
 
     .header {
