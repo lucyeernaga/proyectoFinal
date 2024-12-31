@@ -611,6 +611,13 @@
         font-size: 0.8rem;
     }
 
+    .receta__texto {
+        text-decoration: none;
+        color: #faeae1;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
     .footer {
         padding: 30px 20px; 
     }
