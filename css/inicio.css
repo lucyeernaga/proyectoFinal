@@ -592,6 +592,10 @@
         padding: 0; 
     }
 
+    .main__titulo {
+        padding: 40px;
+    }
+
     .comentarios {
         margin: 20px;
     }
