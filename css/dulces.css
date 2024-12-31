@@ -79,7 +79,7 @@
     width: 100px;
     padding: 10px;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 99;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -285,7 +285,7 @@
 
     .nav {
         padding: 10px;
-        z-index: 1000;
+        z-index: 99;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
     }
