@@ -235,9 +235,9 @@
 
 
 /* Media Query para pantallas más grandes */ 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
     .main {
-        max-width: 1200px;
+        max-width: 1600px;
         margin: 0 auto;
     }
 
@@ -302,8 +302,6 @@
         gap: 20px;
     }
 }
-
-
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {

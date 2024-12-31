@@ -233,8 +233,49 @@
 
 
 
+/* Media Query para pantallas más grandes */
+@media screen and (min-width: 1600px) {
+    .header__imagen img {
+        width: 100%;  
+        height: auto; 
+    }
 
+    .nav__list {
+        gap: 30px;
+    }
 
+    .nav__item a {
+        font-size: 1.2rem;
+    }
+
+    .header__titulo {
+        font-size: 2.5rem;
+    }
+
+    .main {
+        max-width: 1600px;
+        margin: 0 auto; 
+    }
+
+    .main__titulo {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 15%; 
+    }
+
+    .footer__derechos {
+        font-size: 1rem;
+    }
+}
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {

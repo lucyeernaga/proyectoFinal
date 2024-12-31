@@ -277,8 +277,48 @@
 
 
 
+/* Media Query para pantallas más grandes */ 
+@media screen and (min-width: 1600px) {
+    .body {
+        background-color: #37302e;
+        font-size: 1.2rem; 
+    }
 
+    .main {
+        max-width: 1600px; 
+        margin: 0 auto;
+        padding: 20px;
+    }
 
+    .header {
+        padding: 60px 40px; 
+    }
+
+    .header__logo img {
+        width: 20%; 
+    }
+
+    .header__titulo {
+        font-size: 3rem; 
+    }
+
+    .slider {
+        width: 1200px;
+        margin: 40px auto;
+    }
+
+    .footer {
+        padding: 50px 40px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 8%;
+    }
+
+    .footer__menu a {
+        font-size: 1.2rem; 
+    }
+}
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {

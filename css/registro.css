@@ -237,7 +237,65 @@
 
 
 
+/* Media Query para pantallas más grandes */ 
+@media screen and (min-width: 1600px) {
+    .body {
+        background-color: #37302e;
+    }
 
+    .header {
+        padding: 50px 30px;
+    }
+
+    .header__contenido {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__logo img {
+        width: 30%; 
+    }
+
+    .header__menu--btn {
+        font-size: 2rem; 
+        top: 40px;
+        right: 40px;
+    }
+
+    .nav {
+        top: 120px;
+        right: 70px;
+    }
+
+    .main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+
+    .main__titulo {
+        font-size: 2rem; 
+    }
+
+    .formulario {
+        max-width: 900px;
+    }
+
+    .footer {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%;
+    }
+
+    .footer__menu {
+        flex: 1;
+        display: flex;
+    }
+}
 
 
 /* Media Query para desktop */
