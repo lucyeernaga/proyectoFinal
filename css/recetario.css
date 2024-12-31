@@ -492,7 +492,7 @@
     }
 
     .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
-        width: 450px;
+        width: 400px;
         padding: 20px;
         max-width: 100%;
     }
@@ -542,8 +542,8 @@
     }
 
     .otros__libros {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin: 10px 30px 20px 0; /*arriba 10px, der 30px, abajo 20px, izq 0*/
+
     }
 
     .otros__libro-1, .otros__libro-2, .otros__libro-3, .otros__libro-4 {
