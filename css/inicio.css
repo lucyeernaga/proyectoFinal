@@ -592,8 +592,11 @@
         padding: 0; 
     }
 
+    .comentarios {
+        margin: 20px;
+    }
+
     .banner {
-        padding-bottom: 40px;
         padding-top: 40x;
     }
 
