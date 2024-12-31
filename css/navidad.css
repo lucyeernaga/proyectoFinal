@@ -75,9 +75,10 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px; /* Ajusta según la posición del botón */
+    top: 50px; /* para ajustar según la posición del botón */
     right: 10px;
-    width: 100px;
+    max-width: 90vw;
+    width: auto;
     padding: 10px;
     border-radius: 5px;
     z-index: 99;
@@ -158,6 +159,7 @@
 
 .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
     width: 450px;
+    height: auto;
     padding: 20px;
     max-width: 100%;
 }
@@ -414,6 +416,10 @@
     .header__texto {
         display: none;
     }
+
+    .header__imagen img {
+        object-fit: contain; 
+    }
     
     .header__menu--btn {
         font-size: 1.7rem;
@@ -446,6 +452,7 @@
 
     .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
         width: 550px;
+        height: auto;
         padding: 20px;
         max-width: 100%;
     }
@@ -494,6 +501,10 @@
 @media screen and (max-width: 768px) {
     .header__texto {
         display: none;
+    }
+
+    .header__imagen img {
+        object-fit: contain; 
     }
 
     .header__menu--btn {
