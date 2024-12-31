@@ -57,7 +57,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 30px;
     z-index: 40;
 }
@@ -157,7 +157,7 @@
 }
 
 .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
-    width: 450px;
+    width: 90%;
     padding: 20px;
     max-width: 100%;
 }
@@ -197,6 +197,7 @@
     color: #faeae1;
     padding: 30px 20px; 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
     text-align: center;
     position: static;
