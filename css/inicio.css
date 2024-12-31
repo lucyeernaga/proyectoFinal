@@ -193,8 +193,7 @@
     border-radius: 10px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
     max-width: 600px; 
-    margin-bottom: 50px;
-    margin: 40px auto;
+    margin: 40px auto 50px;
 }
 
 .comentarios__inicio, form{
@@ -290,6 +289,41 @@
 
 
 
+/* Media Query para pantallas más grandes */
+@media screen and (min-width: 1600px) {
+    .header__logo img {
+        width: 30%; 
+    }
+
+    .main {
+        max-width: 1400px; 
+        margin: 0 auto; 
+    }
+
+    .recetas {
+        gap: 40px; 
+    }
+
+    .recetas__grid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 30px; 
+    }
+    
+    .banner__img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover; 
+    }
+
+    .footer {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%;
+    }
+}
 
 
 
@@ -297,7 +331,7 @@
 @media screen and (min-width: 1024px) {
     .body {
         background-color: #27201e;
-        overflow-x: hidden; /* Es para que */
+        overflow-x: hidden; 
     }
 
     .header {
