@@ -335,7 +335,7 @@
     .header__logotipo {
         width: 100%; 
         height: auto; 
-        margin: 0 0 0 20px;
+        margin: 20px 0 0 0px;
     }
 
     .header__menu--btn {
@@ -379,7 +379,7 @@
     }
 
     .main {
-        margin-top: 20px;
+        margin: 20px 0 0 160px;
     }
 
     .main__titulo {
@@ -393,7 +393,7 @@
         border-radius: 10px;
         box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
         max-width: 800px; 
-        margin: 40px auto 50px auto; 
+        margin: 40px auto 50px;
     }
     
     .formulario__inicio, .formulario__form{
@@ -447,7 +447,7 @@
     .footer__logo {
         flex: 1; /*el logo ocupa un espacio proporcional a el */
         text-align: center; /* para centrar el logo*/
-        margin-bottom: 5px;
+        margin: 0 0 5px 0;
     }
 
     .footer__derechos {
