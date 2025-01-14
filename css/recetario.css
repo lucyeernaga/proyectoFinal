@@ -713,23 +713,19 @@
         align-items: center;
         margin-top: 20px;
     }
-    
+
     .otros__1 {
-        display: none;
+        display: block; 
     }
-    
-    .otros__1:hover {
-        color: #faeae1;
-    }
-    
+
     .otros__libros {
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    
+
     .otros__libro-1, .otros__libro-2, .otros__libro-3, .otros__libro-4 {
         width: 200px;
-        height: auto ;
+        height: auto;
         margin-bottom: 25px;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
     }
