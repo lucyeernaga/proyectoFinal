@@ -46,7 +46,7 @@
     display: flex;
     width: 40%;
     height: auto;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .header__menu--btn {
@@ -112,7 +112,7 @@
 .header__titulo {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 10px;
+    margin: 10px 0 0 0; 
 }
 
 .header__linea {
@@ -123,7 +123,7 @@
 
 .header__descripcion {
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 .main {
@@ -138,7 +138,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     color: #bf8551;
-    padding-top: 40px;
+    padding: 40px 0 0 0;
     text-align: center;
 }
 
@@ -146,8 +146,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px; 
-    margin-top: 10px;
-    padding-left: 10px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px; 
 }
 
 .recetas {
@@ -172,7 +172,7 @@
 .recetas__titulo{
     color: #bf8551;
     font-size: 1.2rem;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     display: flex;
     justify-content: flex-start;
 }
@@ -294,7 +294,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-left: 270px;
+        margin-left: 0 0 0 270px;
     }
 
     .header__link {
@@ -316,7 +316,7 @@
     .header__logotipo {
         width: 100%; 
         height: auto; 
-        margin-left: 20px;
+        margin: 0 0 0 20px;
     }
 
     .header__menu--btn {
@@ -357,7 +357,7 @@
     }
 
     .main {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
         max-width: 1200px;
     }
 
@@ -371,7 +371,7 @@
         text-align: justify;
         align-items: flex-start;
         gap: 10px; 
-        padding: 10px 0 0 10px;
+        margin: 0 0 0 30px;
     }
 
     .recetas {
@@ -396,7 +396,7 @@
     .recetas__titulo{
         color: #bf8551;
         font-size: 1.2rem;
-        margin-top: 20px;
+        margin: 20px 0 0 0;
         display: flex;
         justify-content: flex-start;
     }
@@ -415,7 +415,7 @@
     }
 
     .recetas__linea {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
     }
 
     .footer {
@@ -429,13 +429,13 @@
     .footer__logo {
         flex: 1; /*el logo ocupa un espacio proporcional a el */
         text-align: center; /* para centrar el logo*/
-        margin-bottom: 5px;
+        margin: 0 0 5px 0;
     }
 
     .footer__derechos {
         flex: 1;
         text-align: center;
-        margin-bottom: 5px;
+        margin: 0 0 5px 0;
     }
 
     .footer__menu {
@@ -502,7 +502,7 @@
     .recetas__titulo{
         color: #bf8551;
         font-size: 1.2rem;
-        margin-top: 20px;
+        margin: 20px 0 0 0;
         display: flex;
         justify-content: flex-start;
     }
@@ -519,7 +519,7 @@
     }
 
     .recetas__linea {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
     }
 
     .footer {
@@ -559,7 +559,7 @@
     }
     
     .recetas__linea {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
     }
 
     .footer {
