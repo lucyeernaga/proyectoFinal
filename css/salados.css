@@ -294,7 +294,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-left: 0 0 0 270px;
+        margin: 0 0 0 270px;
     }
 
     .header__link {
@@ -316,7 +316,7 @@
     .header__logotipo {
         width: 100%; 
         height: auto; 
-        margin: 0 0 0 20px;
+        margin: 0 0 0 40px;
     }
 
     .header__menu--btn {
@@ -357,7 +357,7 @@
     }
 
     .main {
-        margin: 20px 0 0 0;
+        margin: 20px 0 0 200px;
         max-width: 1200px;
     }
 
@@ -371,7 +371,7 @@
         text-align: justify;
         align-items: flex-start;
         gap: 10px; 
-        margin: 0 0 0 30px;
+        padding: 10px 0 0 10px;
     }
 
     .recetas {
@@ -429,13 +429,13 @@
     .footer__logo {
         flex: 1; /*el logo ocupa un espacio proporcional a el */
         text-align: center; /* para centrar el logo*/
-        margin: 0 0 5px 0;
+        margin: 5px;
     }
 
     .footer__derechos {
         flex: 1;
         text-align: center;
-        margin: 0 0 5px 0;
+        margin: 0 0 0 5px;
     }
 
     .footer__menu {
