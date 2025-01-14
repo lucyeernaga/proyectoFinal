@@ -155,13 +155,13 @@
     flex-direction: column;
 }
 
-.recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+.recetas__Uno, .recetas__Dos, .recetas__Tres, .recetas__Cuatro, .recetas__Cinco, .recetas__Seis, .recetas__Siete, .recetas__Ocho {
     width: 450px;
     padding: 20px;
     max-width: 100%;
 }
 
-.receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+.receta__Uno, .receta__Dos, .receta__Tres, .receta__Cuatro, .receta__Cinco, .receta__Seis, .receta__Siete, .receta__Ocho {
     width: 100%;
     max-height: 400px;
     height: auto;
@@ -303,14 +303,14 @@
         gap: 30px;  
     }
 
-    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+    .recetas__Uno, .recetas__Dos, .recetas__Tres, .recetas__Cuatro, .recetas__Cinco, .recetas__Seis, .recetas__Siete, .recetas__Ocho {
         width: 100%;
         max-width: 500px;
         padding: 25px;
         margin: 10px;
     }
 
-    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+    .receta__Uno, .receta__Dos, .receta__Tres, .receta__Cuatro, .receta__Cinco, .receta__Seis, .receta__Siete, .receta__Ocho {
         width: 100%;
         height: auto;
         box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
@@ -440,13 +440,13 @@
         flex-direction: column;
     }
 
-    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+    .recetas__Uno, .recetas__Dos, .recetas__Tres, .recetas__Cuatro, .recetas__Cinco, .recetas__Seis, .recetas__Siete, .recetas__Ocho {
         width: 700px;
         padding: 20px;
         max-width: 100%;
     }
 
-    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+    .receta__Uno, .receta__Dos, .receta__Tres, .receta__Cuatro, .receta__Cinco, .receta__Seis, .receta__Siete, .receta__Ocho {
         width: 100%;
         height: auto;
         box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
@@ -569,13 +569,13 @@
         flex-direction: column;
     }
 
-    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+    .recetas__Uno, .recetas__Dos, .recetas__Tres, .recetas__Cuatro, .recetas__Cinco, .recetas__Seis, .recetas__Siete, .recetas__Ocho {
         width: 400px;
         padding: 20px;
         max-width: 100%;
     }
 
-    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+    .receta__Uno, .receta__Dos, .receta__Tres, .receta__Cuatro, .receta__Cinco, .receta__Seis, .receta__Siete, .receta__Ocho {
         width: 100%;
         height: auto;
         box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
@@ -674,13 +674,13 @@
         flex-direction: column;
     }
     
-    .recetas__1, .recetas__2, .recetas__3, .recetas__4, .recetas__5, .recetas__6, .recetas__7, .recetas__8 {
+    .recetas__Uno, .recetas__Dos, .recetas__Tres, .recetas__Cuatro, .recetas__Cinco, .recetas__Seis, .recetas__Siete, .recetas__Ocho  {
         width: 450px;
         padding: 20px;
         max-width: 100%;
     }
     
-    .receta__1, .receta__2, .receta__3, .receta__4, .receta__5, .receta__6, .receta__7, .receta__8 {
+    .receta__Uno, .receta__Dos, .receta__Tres, .receta__Cuatro, .receta__Cinco, .receta__Seis, .receta__Siete, .receta__Ocho {
         width: 100%;
         height: auto;
         box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
