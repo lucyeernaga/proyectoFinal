@@ -4,176 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario</title>
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="css/recetario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" target="_blank" rel="noreferrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" target="_blank" rel="noreferrer">
+    <script src="./js/inicio.js" defer></script>
 </head>
-<body>
-    
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-        <!-- Fuentes -->
-        <link rel="stylesheet" href="css/recetario.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
-        <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" target="_blank" rel="noreferrer">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" target="_blank" rel="noreferrer">
-    </head>
-    
-    <body class="body">
-        <!-- Metodología BEM -->
-        <!-- La etiqueta <header> contiene la información del encabezado -->
-        <header class="header">
-            <div class="header__imagen">
-                <img src="img/batidoOscuro.png" alt="Imagen de fondo">
+
+<body class="body">
+    <!-- Metodología BEM -->
+    <!-- La etiqueta <header> contiene la información del encabezado -->
+    <header class="header">
+        <div class="header__imagen">
+            <img src="img/batidoOscuro.png" alt="Imagen de fondo">
+        </div>
+
+        <div class="header__contenido">
+            <div class="header__logo">
+                <a class="header__link" href="./index.html" title="header__a"><img class="header__logotipo"
+                        src="img/logoBlancoMovileFirst.png" alt="Logo yaya's blog"></a>
             </div>
-    
-            <div class="header__contenido">
-                <div class="header__logo">
-                    <a class="header__link" href="./index.html" title="header__a"><img class="header__logotipo"
-                            src="img/logoBlancoMovileFirst.png" alt="Logo yaya's blog"></a>
+
+            <!-- Icono menú -->
+            <button class="header__menu--btn" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Menú de navegación -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
+                    <li class="nav__item"><a title="Inicio" href="./index.html">Inicio</a></li>
+                    <li class="nav__item"><a title="Recetario" href="./recetario.html">Recetario</a></li>
+                    <li class="nav__item"><a title="Nosotros" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav__item"><a title="Registro" href="./registro.html">Registro</a></li>
+                    <li class="nav__item"><a title="Contacto" href="./index.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Etiquetas como: h1, h2, h3, etc. se usan como encabezados y <p> para escribir párrafos o texto -->
+            <div class="header__texto">
+                <h2 class="header__titulo">Las recetas de toda la vida</h2>
+                <hr class="header__linea">
+                <p class="header__descripcion">Comida deliciosa</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- La etiqueta main alberga todo el contenido principal de la web -->
+    <main class="main">
+        <div class="main__container">
+            <h1 class="main__titulo">Recetario de cocina</h1>
+            <section class="main__recetas-otros">
+                <div class="recetas">
+                    <picture class="recetas__1">
+                        <source media="(min-width: 1024px)" srcset="img/canapeSalmon.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/canapeSalmon.jpg" loading="lazy">
+                        <img class="receta__1" src="img/canapeSalmon.jpg" alt="Canape de salmon" loading="lazy">
+                        <h2 class="recetas__titulo">Canapé de salmón</h2>
+                        <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__2">
+                        <source media="(min-width: 1024px)" srcset="img/caldoGrelos.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/caldoGrelos.jpg" loading="lazy">
+                        <img class="receta__2" src="img/caldoGrelos.jpg" alt="Caldo grelos" loading="lazy">
+                        <h2 class="recetas__titulo">Caldo de Grelos Gallego</h2>
+                        <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__3">
+                        <source media="(min-width: 1024px)" srcset="img/arrozNegro.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/arrozNegro.jpg" loading="lazy">
+                        <img class="receta__3" src="img/arrozNegro.jpg" alt="Arroz Negro" loading="lazy">
+                        <h2 class="recetas__titulo">Arroz negro de la casa</h2>
+                        <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__4">
+                        <source media="(min-width: 1024px)" srcset="img/macarronesChorizo.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/macarronesChorizo.jpg" loading="lazy">
+                        <img class="receta__4" src="img/macarronesChorizo.jpg" alt="Macarrones con chorizo"
+                            loading="lazy">
+                        <h2 class="recetas__titulo">Macarrones con chorizo</h2>
+                        <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__5">
+                        <source media="(min-width: 1024px)" srcset="img/corderoAsado.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/corderoAsado.jpg" loading="lazy">
+                        <img class="receta__5" src="img/corderoAsado.jpg" alt="Cordero asado" loading="lazy">
+                        <h2 class="recetas__titulo">Delicioso Cordero Asado</h2>
+                        <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__6">
+                        <source media="(min-width: 1024px)" srcset="img/canapeGulas.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/canapeGulas.jpg" loading="lazy">
+                        <img class="receta__6" src="img/canapeGulas.jpg" alt="Canapé gulas" loading="lazy">
+                        <h2 class="recetas__titulo">Canapé gulas</h2>
+                        <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__7">
+                        <source media="(min-width: 1024px)" srcset="img/roscon.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/roscon.jpg" loading="lazy">
+                        <img class="receta__7" src="img/roscon.jpg" alt="Roscón de almendras" loading="lazy">
+                        <h2 class="recetas__titulo">Roscón de almendras</h2>
+                        <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
+
+                    <picture class="recetas__8">
+                        <source media="(min-width: 1024px)" srcset="img/batido.jpg" loading="lazy">
+                        <source media="(min-width: 768px)" srcset="img/batido.jpg" loading="lazy">
+                        <img class="receta__8" src="img/batido.jpg" alt="Batido de avena" loading="lazy">
+                        <h2 class="recetas__titulo">Batido de avena y plátano</h2>
+                        <a class="receta__texto" href="dulces.html" title="receta__a">¡Haz click aqui y descubre la
+                            receta!!</a>
+                        <hr class="recetas__linea">
+                    </picture>
                 </div>
-    
-                <!-- Icono menú -->
-                <button class="header__menu--btn" aria-label="Abrir menú">
-                    <i class="fa fa-bars"></i>
-                </button>
-    
-                <!-- Menú de navegación -->
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
-                        <li class="nav__item"><a title="Inicio" href="./index.html">Inicio</a></li>
-                        <li class="nav__item"><a title="Recetario" href="./recetario.html">Recetario</a></li>
-                        <li class="nav__item"><a title="Nosotros" href="./nosotros.html">Nosotros</a></li>
-                        <li class="nav__item"><a title="Registro" href="./registro.html">Registro</a></li>
-                        <li class="nav__item"><a title="Contacto" href="./index.html">Contacto</a></li>
-                    </ul>
-                </nav>
-    
-                <!-- Etiquetas como: h1, h2, h3, etc. se usan como encabezados y <p> para escribir párrafos o texto -->
-                <div class="header__texto">
-                    <h2 class="header__titulo">Las recetas de toda la vida</h2>
-                    <hr class="header__linea">
-                    <p class="header__descripcion">Comida deliciosa</p>
+
+                <div class="otros">
+                    <a href="salados.html" class="otros__1" title="otros">SALADOS</a>
+                    <a href="dulces.html" class="otros__1" title="otros">DULCES</a>
+                    <a href="navidad.html" class="otros__1" title="otros">NAVIDAD</a>
+                    <a href="registro.html" class="otros__1" title="otros">REGISTRO</a>
+                    <h4 class="otros__libros">Libros que te pueden ayudar en la cocina</h4>
+                    <img class="otros__libro-1" src="img/otrosLibro1.jpg" alt="Libro cocina 1">
+                    <img class="otros__libro-2" src="img/otrosLibro2.jpg" alt="Libro cocina 2">
+                    <img class="otros__libro-3" src="img/otrosLibro3.jpg" alt="Libro cocina 3">
+                    <img class="otros__libro-4" src="img/otrosLibro4.jpg" alt="Libro cocina 4">
                 </div>
-    
-            </div>
-        </header>
-    
-        <!-- La etiqueta main alberga todo el contenido principal de la web -->
-        <main class="main">
-            <div class="main__container">
-                <h1 class="main__titulo">Recetario de cocina</h1>
-                <section class="main__recetas-otros">
-                    <div class="recetas">
-                        <picture class="recetas__1">
-                            <source media="(min-width: 1024px)" srcset="img/canapeSalmon.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/canapeSalmon.jpg" loading="lazy">
-                            <img class="receta__1" src="img/canapeSalmon.jpg" alt="Canape de salmon" loading="lazy">
-                            <h2 class="recetas__titulo">Canapé de salmón</h2>
-                            <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
+            </section>
+        </div>
+    </main>
 
-                        <picture class="recetas__2">
-                            <source media="(min-width: 1024px)" srcset="img/caldoGrelos.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/caldoGrelos.jpg" loading="lazy">
-                            <img class="receta__2" src="img/caldoGrelos.jpg" alt="Caldo grelos" loading="lazy">
-                            <h2 class="recetas__titulo">Caldo de Grelos Gallego</h2>
-                            <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-
-                        <picture class="recetas__3">
-                            <source media="(min-width: 1024px)" srcset="img/arrozNegro.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/arrozNegro.jpg" loading="lazy">
-                            <img class="receta__3" src="img/arrozNegro.jpg" alt="Arroz Negro" loading="lazy">
-                            <h2 class="recetas__titulo">Arroz negro de la casa</h2>
-                            <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-        
-                        <picture class="recetas__4">
-                            <source media="(min-width: 1024px)" srcset="img/macarronesChorizo.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/macarronesChorizo.jpg" loading="lazy">
-                            <img class="receta__4" src="img/macarronesChorizo.jpg" alt="Macarrones con chorizo" loading="lazy">
-                            <h2 class="recetas__titulo">Macarrones con chorizo</h2>
-                            <a class="receta__texto" href="salados.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-        
-                        <picture class="recetas__5">
-                            <source media="(min-width: 1024px)" srcset="img/corderoAsado.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/corderoAsado.jpg" loading="lazy">
-                            <img class="receta__5" src="img/corderoAsado.jpg" alt="Cordero asado" loading="lazy">
-                            <h2 class="recetas__titulo">Delicioso Cordero Asado</h2>
-                            <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-        
-                        <picture class="recetas__6">
-                            <source media="(min-width: 1024px)" srcset="img/canapeGulas.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/canapeGulas.jpg" loading="lazy">
-                            <img class="receta__6" src="img/canapeGulas.jpg" alt="Canapé gulas" loading="lazy">
-                            <h2 class="recetas__titulo">Canapé gulas</h2>
-                            <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-        
-                        <picture class="recetas__7">
-                            <source media="(min-width: 1024px)" srcset="img/roscon.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/roscon.jpg" loading="lazy">
-                            <img class="receta__7" src="img/roscon.jpg" alt="Roscón de almendras" loading="lazy">
-                            <h2 class="recetas__titulo">Roscón de almendras</h2>
-                            <a class="receta__texto" href="navidad.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-        
-                        <picture class="recetas__8">
-                            <source media="(min-width: 1024px)" srcset="img/batido.jpg" loading="lazy">
-                            <source media="(min-width: 768px)" srcset="img/batido.jpg" loading="lazy">
-                            <img class="receta__8" src="img/batido.jpg" alt="Batido de avena" loading="lazy">
-                            <h2 class="recetas__titulo">Batido de avena y plátano</h2>
-                            <a class="receta__texto" href="dulces.html" title="receta__a">¡Haz click aqui y descubre la receta!!</a>
-                            <hr class="recetas__linea">
-                        </picture>
-                    </div>
-
-                    <div class="otros">
-                        <a href="salados.html" class="otros__1" title="otros">SALADOS</a>
-                        <a href="dulces.html" class="otros__1" title="otros">DULCES</a>
-                        <a href="navidad.html" class="otros__1" title="otros">NAVIDAD</a>
-                        <a href="registro.html" class="otros__1" title="otros">REGISTRO</a>
-                        <h4 class="otros__libros">Libros que te pueden ayudar en la cocina</h4>
-                        <img class="otros__libro-1" src="img/otrosLibro1.jpg" alt="Libro cocina 1">
-                        <img class="otros__libro-2" src="img/otrosLibro2.jpg" alt="Libro cocina 2">
-                        <img class="otros__libro-3" src="img/otrosLibro3.jpg" alt="Libro cocina 3">
-                        <img class="otros__libro-4" src="img/otrosLibro4.jpg" alt="Libro cocina 4">
-                    </div>
-                </section>       
-            </div> 
-        </main>
-    
-        <!-- La etiqueta footer incluye información legal -->
-        <footer class="footer">
-            <div class="footer__logo">
-                <a href="./index.html"><img class="footer__logo--logotipo" src="img/logoBlancoSinFondo.png"
-                        alt="Logo yaya's blog"></a>
-            </div>
-            <p class="footer__derechos">Derechos de autor &copy 2024, Yaya's blog.</p>
-            <ul class="footer__menu"> <!-- la etiqueta <ul> significa que es una lista desordenada -->
-                <li><a href="#" title="footer__a" target="_blank">Política de Privacidad</a></li>
-                <li><a href="#" title="footer__a" target="_blank">Uso de Cookies</a></li>
-                <li><a href="#" title="footer__a" target="_blank">Aviso Legal</a></li>
-            </ul>
-        </footer>
-        <script src="./js/inicio.js" defer></script>
-    
-    </body>
-    
-    </html>
+    <!-- La etiqueta footer incluye información legal -->
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="./index.html"><img class="footer__logo--logotipo" src="img/logoBlancoSinFondo.png"
+                    alt="Logo yaya's blog"></a>
+        </div>
+        <p class="footer__derechos">Derechos de autor &copy 2024, Yaya's blog.</p>
+        <ul class="footer__menu"> <!-- la etiqueta <ul> significa que es una lista desordenada -->
+            <li><a href="#" title="footer__a" target="_blank">Política de Privacidad</a></li>
+            <li><a href="#" title="footer__a" target="_blank">Uso de Cookies</a></li>
+            <li><a href="#" title="footer__a" target="_blank">Aviso Legal</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
