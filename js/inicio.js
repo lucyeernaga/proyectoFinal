@@ -14,11 +14,11 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.querySelector('.header__menu--btn'); // Selección del botón
-    const navMenu = document.querySelector('.nav'); // Selección del menú
+    const menuBtn = document.querySelector('.header__menu--btn'); // selecciono el botón
+    const navMenu = document.querySelector('.nav'); // selecciono el menú
     console.log(menuBtn, navMenu); // imprimir en pantalla
 
     menuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('nav--activo'); // Alternar clase para mostrar/ocultar
+        navMenu.classList.toggle('nav--activo'); // mostrar/ocultar
     });
 });
