@@ -12,5 +12,14 @@ Esta web tiene un estilo concreto con un logotipo creado desde cero y una paleta
 - Javascript
 
 ## Branding 
-Para crear el Branding comencé con la creación del logotipo para luego crear y buscar una paleta que se adecuara a mis gustos y necesidades. 
+Para crear el Branding comencé con la creación del logotipo para luego crear y buscar una paleta que se adecuara a mis gustos y necesidades.
+
+La paleta principal la saqué de https://coolors.co/palettes/trending, página que me gusta un montón y utilizo en mis proyectos de diseño gráfico, pero luego añadí mis propias variaciones de colores para determinados diseños. 
+
+### Paleta principal
+- --color-1: #faeae1;
+- --color-2: #bf8551;
+- --color-3: #5e3023;
+- --color-4: #1a1716;
+- --color-5: #000000;
 
