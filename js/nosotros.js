@@ -51,3 +51,69 @@ function actualizarSlider() {
 // 3. Inicializamos el slider
 // -------------------------------------------------------------------
 actualizarSlider(); // Llamamos la función para mostrar la primera imagen al cargar la página
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Botón leer más , leer menos
+
+// -------------------------------------------------------------------
+// 1. Declaramos constantes y variables
+// -------------------------------------------------------------------
+
+// Seleccionamos el botón y el texto a mostrar/ocultar
+const btnExpandir = document.getElementById("btnExpandir");
+const texto2 = document.querySelector(".texto2");
+
+// -------------------------------------------------------------------
+// 2. Eventos y funciones
+// -------------------------------------------------------------------
+
+// EventListener para el botón "Leer más"
+btnExpandir.addEventListener("click", alternarTexto);
+
+// Función para alternar la visibilidad del texto
+function alternarTexto() {
+    const textoVisible = texto2.style.display === "block";
+
+    if (textoVisible) {
+        ocultarTexto();
+    } else {
+        mostrarTexto();
+    }
+}
+
+// Función para mostrar el texto
+function mostrarTexto() {
+    texto2.style.display = "block";
+    btnExpandir.textContent = "Leer menos";
+}
+
+// Función para ocultar el texto
+function ocultarTexto() {
+    texto2.style.display = "none";
+    btnExpandir.textContent = "Leer más";
+}
+
+// -------------------------------------------------------------------
+// 3. Inicializamos el estado inicial
+// -------------------------------------------------------------------
+ocultarTexto(); // Ocultamos el texto al cargar la página

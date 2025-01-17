@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
-<head>
+
+<!-- metadatos, viewport => diseño responsive, título de la página, fuentes y estilos -->    
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Yaya's Blog" content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
     <title>Yaya's Blog</title>
 
-    <!-- Fuentes -->
+    <!-- Fuentes, iconos, estilos de CSS y Javascript-->
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
@@ -19,17 +21,20 @@
     <!-- Metodología BEM -->
     <!-- La etiqueta <header> contiene la información del encabezado -->
     <header class="header">
+        <!-- Imagen de fondo -->
         <div class="header__imagen">
             <img src="img/batidoOscuro.png" alt="Imagen de fondo">
         </div>
 
         <div class="header__contenido">
+            <!-- Logotipo -->
             <div class="header__logo">
+                <!-- <a> es un elemento de línea -->
                 <a class="header__link" href="./index.html"><img class="header__logotipo"
                         src="img/logoBlancoMovileFirst.png" alt="Logo yaya's blog"></a>
             </div>
 
-            <!-- Icono menú -->
+            <!-- Botón de menú con icono-->
             <button class="header__menu--btn" aria-label="Abrir menú" title="header__boton">
                 <i class="fa fa-bars"></i>
             </button>
@@ -37,7 +42,7 @@
             <!-- Menú de navegación -->
             <nav class="nav">
                 <ul class="nav__list">
-                    <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
+                    <!-- Con la etiqueta: <a href=""></a>, creo un enlace-->
                     <li class="nav__item"><a title="Inicio" href="./index.html">Inicio</a></li>
                     <li class="nav__item"><a title="Recetario" href="./recetario.html">Recetario</a></li>
                     <li class="nav__item"><a title="Nosotros" href="./nosotros.html">Nosotros</a></li>
@@ -58,14 +63,20 @@
 
     <!-- La etiqueta main alberga todo el contenido principal de la web -->
     <main class="main">
+        <!-- <div> es un elemento de bloque (block) -->
         <div class="main__container">
             <h1 class="main__titulo">Especialidades de la casa</h1>
 
+            <!--  Sección de recetas -->
+            <!-- He usado <section> en varias ocasiones porque me ayuda tener bien definidas las tres partes del main -->
             <section class="recetas recetas__grid">
-                <!-- He usado <section> en varias ocasiones porque me ayuda tener bien definidas las tres partes del main -->
+
+                <!-- <picture> se usa para imágenes -->
                 <picture class="recetas__uno">
+                    <!-- media queries y srcset para adaptar el diseño a dif formatos -->
                     <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg" >
                     <source media="(min-width: 768px)" srcset="img/espaguetis.jpg">
+                    <!-- target="_blank" para que el enlace se abra en una nueva pestaña-->
                     <a href="recetario.html" target="_blank" title="Recetas">
                         <img class="receta__uno" src="img/espaguetis.jpg" alt="Espaguetis">
                     </a>
@@ -75,6 +86,7 @@
                         boquiabierto con esta pedazo de receta de sabor único y potente, sigue leyendo...</p>
                     <a class="receta__texto" href="recetario.html" target="_blank" title="recetas__a">Sigue
                         leyendo...</a>
+                        <!-- <hr> para hacer una línea horizontal, como un separador -->
                     <hr class="recetas__linea">
                 </picture>
 
@@ -189,12 +201,14 @@
                 </picture>
             </section>
 
+            <!-- Section de comentarios, formulario con etiquetas <fieldset>, <label>, <input> y <textarea> -->
             <section class="comentarios">
                 <div class="comentarios__inicio">
                     <form action="/procesar-comentarios" method="post" enctype="multipart/form-data">
                         <fieldset class="comentarios__fieldset">
                             <!-- Nombre -->
                             <label class="comentarios__label" for="nombre">Nombre</label>
+                            <!-- Uso "required" para hacer que sea un campo obligatorio y se complete si o si -->
                             <input class="comentarios__input" type="text" name="nombre" id="nombre" required
                                 placeholder="Escribe tu nombre">
 
@@ -215,10 +229,12 @@
                 </div>
             </section>
 
+            <!-- Realicé este banner para completar un poco más la página de inicio -->
             <section class="banner">
                 <picture class="banner__foto">
                     <source media="(min-width: 1024px)" srcset="img/bannerClaro.png">
                     <source media="(min-width: 768px)" srcset="img/bannerClaro.png">
+                    <!-- <img> es un elemento en línea (inline) -->
                     <img class="banner__img" src="img/bannerClaro.png" alt="banner">
                 </picture>
             </section>
