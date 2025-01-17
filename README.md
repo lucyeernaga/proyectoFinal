@@ -5,11 +5,11 @@ En lugar de un portfolio, decidí realizar una web con un contenido diferente pa
 
 Esta web tiene un estilo concreto con un logotipo creado desde cero y una paleta pensada para que todo tenga coherencia y cohesión. Tantoel logotipo, como las pruebas de color, tamaño y texto los hice en Adobe Illustrator apartir de bocetos hecho a mano. 
 
-## Lenguajes utilizados 
-
+## Lenguajes y metodología utilizados 
 - HTML5
 - CSS3
 - Javascript
+- BEM
 
 ## Branding 
 Para crear el Branding comencé con la creación del logotipo para luego crear y buscar una paleta que se adecuara a mis gustos y necesidades.
@@ -22,4 +22,5 @@ La paleta principal la saqué de https://coolors.co/palettes/trending, página q
 - --color-3: #5e3023;
 - --color-4: #1a1716;
 - --color-5: #000000;
+
 
