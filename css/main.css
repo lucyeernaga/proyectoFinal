@@ -1,13 +1,8 @@
 /* -------------------------------------------------------------------
    1. Estilos generales (mobile first)
    ------------------------------------------------------------------- */
-   * {
-    box-sizing: border-box; /* borde */
-    margin: 0; /* margen */
-    padding: 0; /* relleno */
-}
-
-body {
+/* estos son los estilos generales del body, header, main, y footer de todas las pags */
+.body {
     font-family: 'Poppins', sans-serif; /* fuente principal de mi web */
     background-color: #2d2826; /* color de fondo */
     color: #faeae1; /* color del texto */
@@ -232,3 +227,4 @@ body {
 
 .banner__foto {
     display: block; /* bloque*/
+}

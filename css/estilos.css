@@ -1,0 +1,11 @@
+/* Estilos es el archivo CSS donde está el reset, las tipos y las variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf');
+}
