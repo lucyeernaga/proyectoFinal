@@ -155,15 +155,12 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
-
-.recetas__uno, .recetas__dos, .recetas__tres, .recetas__cuatro, .recetas__cinco, .recetas__seis, .recetas__siete, .recetas__ocho  {
     width: 80%;
     height: auto;
     position: relative;
 }
 
-.receta__uno, .receta__dos, .receta__tres, .receta__cuatro, .receta__cinco, .receta__seis, .receta__siete, .receta__ocho {
+.receta {
     width: 100%;
     height: auto;
     box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
