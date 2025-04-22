@@ -1,19 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 
-<!-- metadatos, viewport => diseño responsive, título de la página, fuentes y estilos -->    
-<head> 
+<!-- metadatos, viewport => diseño responsive, título de la página, fuentes y estilos -->
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Yaya's Blog" content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
+    <meta name="Yaya's Blog"
+        content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
     <title>Yaya's Blog</title>
 
-    <!-- Fuentes, iconos, estilos de CSS y Javascript-->
-    <link rel="stylesheet" href="css/main.css">
+ 
+    <!-- Iconos y links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" target="_blank" rel="noreferrer">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" target="_blank" rel="noreferrer">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" target="_blank" rel="noreferrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"
+        target="_blank" rel="noreferrer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <!-- Scripts -->
     <script src="./js/inicio.js" defer></script>
 </head>
 
@@ -74,7 +86,7 @@
                 <!-- <picture> se usa para imágenes -->
                 <picture class="recetas">
                     <!-- media queries y srcset para adaptar el diseño a dif formatos -->
-                    <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg" >
+                    <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg">
                     <source media="(min-width: 768px)" srcset="img/espaguetis.jpg">
                     <!-- target="_blank" para que el enlace se abra en una nueva pestaña-->
                     <a href="recetario.html" target="_blank" title="Recetas">
@@ -86,7 +98,7 @@
                         boquiabierto con esta pedazo de receta de sabor único y potente, sigue leyendo...</p>
                     <a class="receta__texto" href="recetario.html" target="_blank" title="recetas__a">Sigue
                         leyendo...</a>
-                        <!-- <hr> para hacer una línea horizontal, como un separador -->
+                    <!-- <hr> para hacer una línea horizontal, como un separador -->
                     <hr class="recetas__linea">
                 </picture>
 
@@ -121,7 +133,7 @@
                 </picture>
 
                 <picture class="recetas">
-                    <source media="(min-width: 1024px)" srcset="img/tortillaPatatas.jpg"> 
+                    <source media="(min-width: 1024px)" srcset="img/tortillaPatatas.jpg">
                     <source media="(min-width: 768px)" srcset="img/tortillaPatatas.jpg">
                     <a href="recetario.html" target="_blank" title="Recetas">
                         <img class="receta" src="img/tortillaPatatas.jpg" alt="Tortilla de patatas">
@@ -252,4 +264,5 @@
         <p class="footer__derechos">yayasblog@gmail.com</p>
     </footer>
 </body>
+
 </html>
