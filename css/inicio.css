@@ -233,27 +233,48 @@
 
     .comentarios {
         width: 100%;
-      max-width: 800px;       
-         margin: 70px auto 40px auto; 
+        max-width: 800px;       
+        margin: 70px auto 40px auto; 
     }
 }
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .main {
-        padding: 0px; 
+        padding: 20px;
+        margin: 0 auto;
     }
 
-    .recetas__uno, .recetas__dos, .recetas__tres, .recetas__cuatro, .recetas__cinco, .recetas__seis, .recetas__siete, .recetas__ocho  {
-        width: 60%;
+    .main__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .recetas__grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .recetas__item {
+        width: 90%;
+        margin: 0 auto;
+        position: static; /* anulamos posibles desplazamientos */
     }
 
     .receta__texto {
-        color: #faeae1;
-        font-size: 0.8rem;
+        color: var(--color-secondary);
+        font-size: var(--font-size-sm);
         padding: 10px;
         text-decoration: none;
     }
+
+    .comentarios {
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto; /* centrado horizontal */
+    }
+
 }
 
 
