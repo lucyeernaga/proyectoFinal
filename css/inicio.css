@@ -3,18 +3,34 @@
    ------------------------------------------------------------------- */
 
 .main {
-    padding: 20px 10px; /* 20px arriba/abajo y 10px der/izq */
+    padding: 20px 20px; /* 20px arriba/abajo y 10px der/izq */
     background-color: var(--bg-color);
     margin: 0 auto; /* para centrar horizontalmente el main*/
 }
 
-.recetas {
+.main__container {
+    max-width: 1200px; /* o lo que prefieras */
+    margin: 0 auto;
+}
+
+.recetas__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.recetas__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     height: auto;
     position: relative;
 }
@@ -25,11 +41,12 @@
     box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .recetas__titulo {
-    color: #bf8551; /**/
-    font-size: 1rem; /**/
+    color: var(--color-emphasis);
+    font-size: var(--font-size-md);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +64,6 @@
     color: var(--color-secondary);
     font-size: var(--font-size-sm);
     transition: color 0.3s ease; 
-    /* como puedo hacer que este texto se vea debajo y a justado a la izq del texto de las recetas */
 }
 
 .receta__texto:hover {
@@ -116,7 +132,7 @@
 
 
 /* -------------------------------------------------------------------
-   5. Media Query: pantallas frandes, desktop, tablets y móviles
+   Media Query: pantallas frandes, desktop, tablets y móviles
    ------------------------------------------------------------------- */
 
 /* Media Query para pantallas más grandes */
@@ -137,65 +153,37 @@
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
-    .recetas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* centra horizontalmente */
-        align-items: flex-start;
-        gap: 20px;
-        justify-content: center;
-        align-items: start;
-        margin: 0 auto;
-        max-width: 80%;
-    }
-
     .recetas__grid {
-        display: grid; /* 2x2*/
-        grid-template-columns: repeat(2, 1fr);
-
-        grid-template-areas: 
-            "receta1 receta2"
-            "receta3 receta4"
-            "receta5 receta6"
-            "receta7 receta8";
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Tres columnas */
+        gap: 30px;
+        justify-content: center;
     }
     
-    .recetas__1 {
-        grid-area: receta1;
-    }
-
-    .recetas__2 {
-        grid-area: receta2;
-    }
-
-    .recetas__3 {
-        grid-area: receta3;
-    }
-
-    .recetas__4 {
-        grid-area: receta4;
-    }
-
-    .recetas__5 {
-        grid-area: receta5;
-    }
-
-    .recetas__6{
-        grid-area: receta6;
-    }
-
-    .recetas__7 {
-        grid-area: receta7;
-    }
-
-    .recetas__8 {
-        grid-area: receta8;
+    .recetas__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 10px;
+        max-width: 100%;
+        margin: 0 auto;
     }
     
-    .recetas__uno, .recetas__dos, .recetas__tres, .recetas__cuatro, .recetas__cinco, .recetas__seis, .recetas__siete, .recetas__ocho   {
+    .recetas__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -203,12 +191,6 @@
         gap: 10px;
         position: relative;
         left: 200px;
-    }
-
-    .receta__uno, .receta__dos, .receta__tres, .receta__cuatro, .receta__cinco, .receta__seis, .receta__siete, .receta__ocho {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .recetas img {
@@ -223,16 +205,16 @@
     }
 
     .receta__texto {
-        text-decoration: none;
-        font-size: 0.8rem;
-        color: #faeae1;
-        transition: color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--font-size-sm);
+        color: var(--color-secondary);
+        transition: color 0.3s ease; 
     }
 
     .receta__texto:hover {
-        text-decoration: none;
-        font-size: 0.8rem;
-        color: #6c4c30;
+        color: var(--color-emphasis);
     }
 
     .recetas__linea {

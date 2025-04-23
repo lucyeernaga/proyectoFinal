@@ -8,6 +8,7 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden; /* para eliminar cualquier margen invisible raro que se haya quedado por ahí*/
   }
 /* -------------------------------------------------------------------
    2. Header
