@@ -109,10 +109,6 @@
     color: var(--color-emphasis);
 }
 
-.header__texto {
-    display: none;
-}
-
 .header__titulo {
     font-size: var(--font-size-lg);
     font-weight: 600; /* define el grosor del texto (bold) */
@@ -181,9 +177,6 @@
 
 /* Media Query para pantallas más grandes */
 @media screen and (min-width: 1600px) {
-    .header__texto {
-        display: none;
-    }
 
     .header__logo img {
         width: 30%; /* el logo ocupa el 30% del ancho que hay */
@@ -225,14 +218,6 @@
         align-items: center;
     }
 
-    .header__texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: 700px;
-    }
-
     .header__link {
         width: 300px;
         display: block;
@@ -258,7 +243,7 @@
     .header__menu--btn {
         top: 60px;
         right: 77px;
-        bottom: 50px;
+        bottom: 60px;
     }
 
     .nav {
@@ -331,10 +316,6 @@
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    .header__texto {
-        display: none;
-    }
-    
     .header__menu--btn {
         font-size: 1.7rem;
         top: 30px;
