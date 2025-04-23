@@ -1,151 +1,11 @@
 /* -------------------------------------------------------------------
-   1. Estilos generales (movile first)
-   ------------------------------------------------------------------- */
-* {
-    box-sizing: border-box; /* borde */
-    margin: 0; /* margen */
-    padding: 0; /* relleno */
-}
-
-/* -------------------------------------------------------------------
-   2. Body y header
-   ------------------------------------------------------------------- */
-
-.body {
-    font-family: 'Poppins', sans-serif; /* fuente principal de mi web */
-    background-color: #2d2826; /* color de fondo */
-    color: #faeae1; /* color del texto*/
-    line-height: 1.5; /* espacio vertical entre lineas de los textos */
-}
-
-.header {
-    position: relative; /* los elementos hijos están de manera absoluta*/
-    text-align: center; /* centro horizontalmente el texto */
-    padding: 20px 10px; /* 20px arriba y abajo, 10px der e izq */
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7); /* sombra para dar profundidad */
-}
-
-.header__imagen img {
-    position: absolute; /* la img está de manera absoluta */
-    top: 0; /* top, leftt: la img va arriba y a la izq*/
-    left: 0;
-    width: 100%; /* la img ocupa todo el ancho del header */
-    height: auto; /* altura img automática*/
-    object-fit: cover; /* la img se adapta al contenedor */
-    z-index: -1; /* mandar la img detrás de los demás elementos */
-}
-
-.header__contenido {
-    display: flex; /* contenedor flexible */
-    flex-direction: column; /* en columnas, main axis */
-    align-items: center; /* eje transversal, alineado en el centro */
-    gap: 10px; /* espacio entre elementos de 10px */
-}
-
-.header__logo img {
-    display: flex; 
-    width: 40%; /* ocupa un 40% del contenedor*/
-    height: auto;
-    margin: 10px 0; /* 10px arriba y abajo, 0px der e izq */
-}
-
-.header__menu--btn {
-    background: none; /* sin fondo*/
-    border: none; /* sin borde*/
-    color: beige;
-    font-size: 1.5rem; /* tamaño de la fuente */
-    cursor: pointer; /* para hacer que el ratón cambie de icono ya que el menú es interactivo */
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    z-index: 40; /* para ponerlo por encima de los demás elementos */
-}
-
-.header__menu--btn i {
-    font-size: 1.8rem; /* aumento el tamaño del icono del menu*/
-}
-
-.header__link {
-    display: block; /* se comporita como un elemento de bloque */
-    overflow: hidden; /* no desbordamientos */
-}
-
-.nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px; /* Ajusta según la posición del botón */
-    right: 10px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 5px; /* el borde del navegador está redondeado */
-    z-index: 99;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.nav--activo {
-    display: flex;
-}
-
-.nav__list {
-    list-style: none; /* quitar estilos del naveador*/
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.nav__item {
-    margin: 3px 0;
-}
-
-.nav__item a {
-    text-decoration: none;
-    color: #faeae1;
-    font-size: 1rem;
-    transition: color 0.3s ease; /* transición para que cambien los elementos de beige a marrón */
-}
-
-/* :hover para aplicar estilos cuando el cursor está sobre los items del nav */
-.nav__item a:hover {
-    color: #bf8551;
-}
-
-.header__titulo {
-    font-size: 1.2rem;
-    font-weight: 600; /* define el grosor del texto (bold) */
-    margin: 10px 0;
-}
-
-.header__linea {
-    width: 40%;
-    height: 1.8px;
-    background-color: #faeae1;
-}
-
-.header__descripcion {
-    font-size: 0.9rem;
-    margin: 0 0 10px;
-}
-
-/* -------------------------------------------------------------------
-   3. Main, contenido
+   Main, contenido
    ------------------------------------------------------------------- */
 
 .main {
     padding: 20px 10px; /* 20px arriba/abajo y 10px der/izq */
-    max-width: 1200px; /* max tamaño del main: 1200px */
-    color: beige;
-    background-color: #27201e;
+    background-color: var(--bg-color);
     margin: 0 auto; /* para centrar horizontalmente el main*/
-}
-
-.main__titulo {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #bf8551;
-    padding: 40px;
-    margin: 0 0 10px; 
-    text-align: center;
 }
 
 .recetas {
@@ -153,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     width: 80%;
     height: auto;
     position: relative;
@@ -168,8 +28,8 @@
 }
 
 .recetas__titulo {
-    color: #bf8551;
-    font-size: 1rem;
+    color: #bf8551; /**/
+    font-size: 1rem; /**/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,24 +37,36 @@
 }
 
 .recetas__texto {
-    color: #faeae1;
-    font-size: 0.8rem;
+    color: var(--color-secondary); 
+    font-size: var(--font-size-sm);
     padding: 10px;
 }
 
+.receta__texto {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+    transition: color 0.3s ease; 
+    /* como puedo hacer que este texto se vea debajo y a justado a la izq del texto de las recetas */
+}
+
+.receta__texto:hover {
+    color: var(--color-emphasis);
+}
+
 .recetas__linea {
-    border: 1px solid #faeae1;
-    margin: 30px 10px;
+    border: 1px solid var(--color-secondary);
+    width: 300px;
 }
 
 .comentarios {
-    background-color: #6c4c30; 
-    color: #faeae1; 
+    background-color: var(--color-tertiary); 
+    color: var(--color-secondary);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7);
     max-width: 600px; 
-    margin: 40px auto 50px; /* 40px arriba, auto izq/der, 50px abajo */
+    margin: 40px 20px;
 }
 
 .comentarios__inicio, form{
@@ -204,87 +76,30 @@
 }
 
 .comentarios__fieldset {
-    border: 1px solid #bf8551; /*le he puesto una linea de borde para que quede mejor el diseño */
+    border: 1px solid var(--color-emphasis); /*le he puesto una linea de borde para que quede mejor el diseño */ /**/
     border-radius: 8px;
     padding: 10px;
 }
 
 .comentarios__label {
     font-weight: 450;
-    font-size: 0.8rem;
+    font-size: 0.8rem; /**/
     margin: 0 0 5px 5px; /* 0px arriba. 0px der, 5px abajo, 5px izq*/
 }
 
-.comentarios__input {
-    width: 100%;
-    height: auto;
+.comentarios__input, .comentarios__textarea {
+    width: 100%; 
     padding: 10px;
-    border: 1.5px solid #5e3023; /* borde de color medio */
-    background-color: #211c1a; /* fondo más oscuro*/
-    color: #faeae1;
-    font-size: 0.7rem;
+    border: 1.5px solid var(--color-fifth); 
+    background-color: var(--color-fourth); 
+    color: var(--color-secondary); 
+    font-size: 0.7rem; 
 }
 
-.comentarios__textarea  {
-    min-height: 100px;
-    background-color: #211c1a; 
-    color: #faeae1; 
-    border: 1.5px solid #5e3023;
+.comentarios__textarea {
+    min-height: 100px; /* altura mínima */
 }
 
-.banner {
-    width: 100%;
-}
-
-.banner__foto {
-    display: block; 
-    height: auto;
-}
-
-.banner__img {
-    width: 100%; /* ocupa el 100% del contenedor */
-    max-height: 200px; /* altura máx 200px*/
-    display: block;
-}
-
-/* -------------------------------------------------------------------
-   4. Footer
-   ------------------------------------------------------------------- */
-
-.footer {
-    background-color: #1a1716; /* color + oscuro*/
-    color: #faeae1; /* color de texto que resalte */
-    padding: 30px 20px; 
-    display: flex; /* contenedor flexible*/
-    flex-direction: column-reverse; /* el orden de los elementos está invertido en una columna */
-    text-align: center;
-    position: static; /* flujo normal, x defecto */
-}
-
-.footer__logo--logotipo {
-    max-width: 25%; 
-}
-
-.footer__derechos {
-    font-size: 0.8rem;
-    margin: 0 0 8px;
-}
-
-.footer__menu {
-    list-style: none;
-    padding: 15px;
-}
-
-.footer__menu a {
-    text-decoration: none;
-    color: #faeae1;
-    font-size: 0.8rem;
-}
-
-.footer__menu a:hover {
-    text-decoration: dashed;
-    color: #bf8551;
-}
 
 
 
@@ -306,10 +121,6 @@
 
 /* Media Query para pantallas más grandes */
 @media screen and (min-width: 1600px) {
-    .header__logo img {
-        width: 30%; /* el logo ocupa el 30% del ancho que hay */
-    }
-
     .main {
         max-width: 1400px; /* main tiene máx 1400px de anchp */
         margin: 0 auto; 
@@ -324,108 +135,10 @@
         gap: 30px; /* 30px de espacio entre col y filas */
     }
     
-    .banner__img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover; /* el banner se ajusta al formato */
-    }
-
-    .footer {
-        flex-direction: row; /* los elementos están en fila */
-        /* justify-content: main axis*/ 
-        /* space-between: para no dejar espacio al principio y al final del footer */
-        justify-content: space-between; 
-    }
-
-    .footer__logo--logotipo {
-        max-width: 10%;
-    }
 }
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
-    .body {
-        background-color: #27201e; 
-        overflow-x: hidden; 
-    }
-
-    .header {
-        padding: 40px 20px; 
-    }
-
-    .header__contenido {
-        flex-direction: row; /* el contenido está en fila */
-    }
-
-    .header__texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin: 0 0 0 270px;
-    }
-
-    .header__link {
-        width: 300px;
-        display: block;
-        height: auto;
-        overflow: hidden; 
-    }
-
-    .header__imagen img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .header__logo img {
-        width: 50%;
-    }
-
-    .header__logotipo {
-        width: 100%; 
-        height: auto; 
-        margin: 0 0 0 20px;
-    }
-
-    .header__menu--btn {
-        top: 60px;
-        right: 88px;
-    }
-
-    .nav {
-        top: 100px; 
-        right: 50px;
-        width: 100px;
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 99;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .nav__list {
-        display: flex;
-        gap: 20px; 
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav__item {
-        list-style: none;
-    }
-
-    .header__titulo {
-        font-size: 1.8rem;
-    }
-    
-    .header__linea {
-        width: 100%;
-        height: 2.3px;
-        background-color: #faeae1;
-    }
-
-    .header__descripcion {
-        font-size: 1.2rem;
-    }
-
     .recetas {
         display: flex;
         flex-wrap: wrap;
@@ -544,76 +257,12 @@
         left: 170px;
         margin: 70px 0 40px 300px;
     }
-
-    .banner {
-        width: 100%; 
-    }
-
-    .banner__img {
-        height: auto; 
-        width: 100em;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .footer {
-        display: flex; 
-        justify-content: space-between; /* espacio entre los elementos*/
-        align-items: center; /*para poner los elementos de manera vertical*/
-        flex: wrap; /* como no caben los elementos, esto las psa a otra linea*/
-        padding: 10px 10px; 
-    }
-
-    .footer__logo {
-        flex: 1; /*el logo ocupa un espacio proporcional a el */
-        text-align: center; /* para centrar el logo*/
-        margin-bottom: 5px;
-    }
-
-    .footer__derechos {
-        flex: 1;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .footer__logo--logotipo {
-        max-width: 10%; 
-    }
 }
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    .header__texto {
-        display: none;
-    }
-    
-    .header__menu--btn {
-        font-size: 1.7rem;
-        top: 30px;
-        padding: 10px;
-    }
-
-    .nav__list {
-        gap: 7px;
-        padding: 8px;
-        margin: 0;
-    }
-
-    .nav__item a {
-        font-size: 0.8rem;
-    }
-    
     .main {
         padding: 0px; 
-    }
-
-    .banner {
-        width: 100%; 
-    }
-
-    .banner__img {
-        height: auto; 
-        width: 900px;
     }
 
     .recetas__uno, .recetas__dos, .recetas__tres, .recetas__cuatro, .recetas__cinco, .recetas__seis, .recetas__siete, .recetas__ocho  {
@@ -626,68 +275,8 @@
         padding: 10px;
         text-decoration: none;
     }
-
-    .footer {
-        padding: 30px 20px; 
-    }
-
-    .footer__logo--logotipo {
-        max-width: 18%; 
-    }
 }
 
-/* Media Query para móviles */
-@media screen and (max-width: 768px) {
-    .header__texto {
-        display: none;
-    }
-
-    .header__menu--btn {
-        top: 35px;
-        padding: 10px;
-    }
-
-    .main {
-        padding: 0; 
-    }
-
-    .main__titulo {
-        padding: 40px;
-    }
-
-    .comentarios {
-        margin: 20px;
-    }
-
-    .banner {
-        padding-top: 40x;
-    }
-
-    .banner__img {
-        object-fit: cover; 
-    }
-
-    .nav__list {
-        gap: 7px;
-        padding: 8px;
-        margin: 0;
-    }
-
-    .nav__item a {
-        font-size: 0.8rem;
-    }
-
-    .receta__texto {
-        text-decoration: none;
-        color: #faeae1;
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-
-    .footer {
-        padding: 30px 20px; 
-    }
-}
 
 
 

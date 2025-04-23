@@ -1,14 +1,14 @@
-/* -------------------------------------------------------------------
-   1. Estilos generales (mobile first)
-   ------------------------------------------------------------------- */
-/* estos son los estilos generales del body, header, main, y footer de todas las pags */
+/* Estilos generales para movile first: body, header, footer */
 .body {
-    font-family: 'Poppins', sans-serif; /* fuente principal de mi web */
-    background-color: #2d2826; /* color de fondo */
-    color: #faeae1; /* color del texto */
-    line-height: 1.5; /* espacio vertical entre líneas de los textos */
-}
-
+    font-family: 'Poppins';
+    background-color: var(--bg-color);
+    color: var(--color-secondary);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
 /* -------------------------------------------------------------------
    2. Header
    ------------------------------------------------------------------- */
@@ -20,11 +20,11 @@
 }
 
 .header__imagen img {
-    position: absolute; /* la img está de manera absoluta */
-    top: 0; /* top, left: la img va arriba y a la izq */
+    position: absolute; 
+    top: 0; 
     left: 0;
-    width: 100%; /* la img ocupa todo el ancho del header */
-    height: auto; /* altura img automática */
+    width: 100%; 
+    height: auto; 
     object-fit: cover; /* la img se adapta al contenedor */
     z-index: -1; /* mandar la img detrás de los demás elementos */
 }
@@ -39,23 +39,30 @@
 .header__logo img {
     width: 40%; /* ocupa un 40% del contenedor */
     height: auto;
-    margin: 10px 0; /* 10px arriba y abajo, 0px der e izq */
+    margin: 10px 0 ; /* top right bottom left *//* 10px arriba y abajo, 0px der e izq */
 }
 
 .header__menu--btn {
     background: none; /* sin fondo */
     border: none; /* sin borde */
-    color: beige;
-    font-size: 1.5rem; /* tamaño de la fuente */
+    color: var(--color-secondary);
+    font-size: var(--font-size-xxl); /* tamaño de la fuente */
     cursor: pointer; /* para hacer que el ratón cambie de icono ya que el menú es interactivo */
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 40px;
+    right: 35px;
+    bottom: 60px;
+    padding: 10px;
     z-index: 40; /* para ponerlo por encima de los demás elementos */
+}
+
+.header__menu--btn i {
+    font-size: 1.8rem; /* aumento el tamaño del icono del menu*/
 }
 
 .header__link {
     display: block; /* se comporta como un elemento de bloque */
+    overflow: hidden; /* no desbordamientos */
 }
 
 .nav {
@@ -79,22 +86,34 @@
     list-style: none; /* quitar estilos del navegador */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+    padding: 8px;
+    margin: 20px 0 0 0;
+}
+
+.nav__item {
+    margin: 22px 0 0 0; 
 }
 
 .nav__item a {
     text-decoration: none;
-    color: #faeae1;
-    font-size: 1rem;
+    color: var(--color-secondary);
+    font-size: var(--font-size-md);
     transition: color 0.3s ease; /* transición para que cambien los elementos de beige a marrón */
+    font-size:var(--font-size-sm);
 }
 
+/* :hover para aplicar estilos cuando el cursor está sobre los items del nav */
 .nav__item a:hover {
-    color: #bf8551;
+    color: var(--color-emphasis);
+}
+
+.header__texto {
+    display: none;
 }
 
 .header__titulo {
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
     font-weight: 600; /* define el grosor del texto (bold) */
     margin: 10px 0;
 }
@@ -102,129 +121,249 @@
 .header__linea {
     width: 40%;
     height: 1.8px;
-    background-color: #faeae1;
+    background-color: var(--bg-color-secondary);
 }
 
 .header__descripcion {
-    font-size: 0.9rem;
+    font-size: var(--font-size-sm);
     margin: 0 0 10px;
 }
 
 /* -------------------------------------------------------------------
    3. Main
    ------------------------------------------------------------------- */
-   .main {
-    padding: 20px 10px; /* 20px arriba/abajo y 10px der/izq */
-    max-width: 1200px; /* max tamaño del main: 1200px */
-    color: beige;
-    background-color: #27201e; /* color de fondo del main */
-    margin: 0 auto; /* para centrar horizontalmente el main */
-    display: block; /* 1 */
-    box-sizing: border-box; /* 1 */
+
+.main {
+    flex: 1; /* para que ocupe todo el espacio que hay */
 }
 
 .main__titulo {
-    font-size: 1.6rem; /* tamaño del título principal */
-    font-weight: 600; /* grosor del texto */
-    color: #bf8551; /* color del título */
-    padding: 40px; /* espaciado interno */
+    font-size: var(--font-size-xl); 
+    font-weight: 600; 
+    color: var(--color-emphasis); 
+    padding: 40px; 
     margin: 0 0 10px; /* margen inferior */
-    text-align: center; /* centrar el texto */
+    text-align: center; /* paara centrar el texto */
 }
 
 /* -------------------------------------------------------------------
-   4. Recetas
+   4. Footer
    ------------------------------------------------------------------- */
-.recetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* espacio entre recetas */
-    width: 80%; /* ancho del contenedor de recetas */
-    height: auto; /* altura automática */
-    position: relative; /* para posicionar elementos hijos */
+   .footer {
+    background-color: #1a1716; /* color + oscuro*/
+    color: #faeae1; /* color de texto que resalte */
+    padding: 30px 20px; 
+    display: flex; /* contenedor flexible*/
+    flex-direction: column-reverse; /* el orden de los elementos está invertido en una columna */
+    text-align: center;
+    position: static; /* flujo normal, x defecto */
 }
 
-.receta {
-    width: 100%; /* ancho completo */
-    height: auto; /* altura automática */
-    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7); /* sombra */
-    border-radius: 5px; /* bordes redondeados */
-    cursor: pointer; /* cursor de puntero */
+.footer__logo--logotipo {
+    max-width: 25%; 
 }
 
-.recetas__titulo {
-    color: #bf8551; /* color del título de la receta */
-    font-size: 1rem; /* tamaño del texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0 0; /* margen superior */
+.footer__derechos {
+    font-size: 0.8rem;
+    margin: 0 0 8px;
 }
 
-.recetas__texto {
-    color: #faeae1; /* color del texto de la receta */
-    font-size: 0.8rem; /* tamaño del texto */
-    padding: 10px; /* espaciado interno */
+.footer__menu {
+    list-style: none;
+    padding: 15px;
 }
 
-.recetas__linea {
-    border: 1px solid #faeae1; /* línea de separación */
-    margin: 30px 10px; /* márgenes */
+.footer__menu a {
+    text-decoration: none;
+    color: #faeae1;
+    font-size: 0.8rem;
 }
+
+.footer__menu a:hover {
+    text-decoration: dashed;
+    color: #bf8551;
+}
+
+
+
+
+
+
 
 /* -------------------------------------------------------------------
-   5. Comentarios
+   5. Media Query: pantallas frandes, desktop, tablets
    ------------------------------------------------------------------- */
-.comentarios {
-    background-color: #6c4c30; /* color de fondo */
-    color: #faeae1; /* color del texto */
-    padding: 20px; /* espaciado interno */
-    border-radius: 10px; /* bordes redondeados */
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.7); /* sombra */
-    max-width: 600px; /* ancho máximo */
-    margin: 40px auto 50px; /* márgenes */
+
+/* Media Query para pantallas más grandes */
+@media screen and (min-width: 1600px) {
+    .header__logo img {
+        width: 30%; /* el logo ocupa el 30% del ancho que hay */
+    }
+
+    .footer {
+        flex-direction: row; /* los elementos están en fila */
+        /* justify-content: main axis*/ 
+        /* space-between: para no dejar espacio al principio y al final del footer */
+        justify-content: space-between; 
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%;
+    }
 }
 
-.comentarios__inicio, form {
-    display: flex; /* contenedor flexible */
-    flex-direction: column; /* en columnas */
-    gap: 20px; /* espacio entre elementos */
+
+
+
+
+
+
+/* Media Query para desktop */
+@media screen and (min-width: 1024px) {
+    .body {
+        background-color: #27201e; 
+        overflow-x: hidden; 
+    }
+
+    .header {
+        padding: 40px 20px; 
+    }
+
+    .header__contenido {
+        flex-direction: row; /* el contenido está en fila */
+    }
+
+    .header__texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 0 0 270px;
+    }
+
+    .header__link {
+        width: 300px;
+        display: block;
+        height: auto;
+        overflow: hidden; 
+    }
+
+    .header__imagen img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header__logo img {
+        width: 50%;
+    }
+
+    .header__logotipo {
+        width: 100%; 
+        height: auto; 
+        margin: 0 0 0 20px;
+    }
+
+    .header__menu--btn {
+        top: 60px;
+        right: 88px;
+    }
+
+    .nav {
+        top: 100px; 
+        right: 50px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 99;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 20px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__item {
+        list-style: none;
+    }
+
+    .header__titulo {
+        font-size: 1.8rem;
+    }
+    
+    .header__linea {
+        width: 100%;
+        height: 2.3px;
+        background-color: #faeae1;
+    }
+
+    .header__descripcion {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        display: flex; 
+        justify-content: space-between; /* espacio entre los elementos*/
+        align-items: center; /*para poner los elementos de manera vertical*/
+        flex: wrap; /* como no caben los elementos, esto las psa a otra linea*/
+        padding: 10px 10px; 
+    }
+
+    .footer__logo {
+        flex: 1; /*el logo ocupa un espacio proporcional a el */
+        text-align: center; /* para centrar el logo*/
+        margin-bottom: 5px;
+    }
+
+    .footer__derechos {
+        flex: 1;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .footer__logo--logotipo {
+        max-width: 10%; 
+    }
 }
 
-.comentarios__fieldset {
-    border: 1px solid #bf8551; /* borde del fieldset */
-    border-radius: 8px; /* bordes redondeados */
-    padding: 10px; /* espaciado interno */
+
+
+
+
+
+
+
+
+/* Media Query para tablets*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .header__texto {
+        display: none;
+    }
+    
+    .header__menu--btn {
+        font-size: 1.7rem;
+        top: 30px;
+        padding: 10px;
+    }
+
+    .nav__list {
+        gap: 7px;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .nav__item a {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        padding: 30px 20px; 
+    }
+
+    .footer__logo--logotipo {
+        max-width: 18%; 
+    }
 }
 
-.comentarios__label {
-    font-weight: 450; /* grosor del texto */
-    font-size: 0.8rem; /* tamaño del texto */
-    margin: 0 0 5px 5px; /* márgenes */
-}
 
-.comentarios__input, .comentarios__textarea {
-    width: 100%; /* ancho completo */
-    padding: 10px; /* espaciado interno */
-    border: 1.5px solid #5e3023; /* borde */
-    background-color: #211c1a; /* fondo */
-    color: #faeae1; /* color del texto */
-    font-size: 0.7rem; /* tamaño del texto */
-}
-
-.comentarios__textarea {
-    min-height: 100px; /* altura mínima */
-}
-
-/* -------------------------------------------------------------------
-   6. Banner
-   ------------------------------------------------------------------- */
-.banner {
-    width: 100%; /* ancho completo */
-}
-
-.banner__foto {
-    display: block; /* bloque*/
-}
