@@ -262,11 +262,23 @@
         position: static; /* anulamos posibles desplazamientos */
     }
 
+    .recetas__titulo {
+        font-size: var(--font-size-lg);
+    }
+
     .receta__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         color: var(--color-secondary);
         font-size: var(--font-size-sm);
         padding: 10px;
         text-decoration: none;
+        transition: color 0.3s ease; 
+    }
+
+    .receta__texto:hover {
+        color: var(--color-emphasis);
     }
 
     .comentarios {
