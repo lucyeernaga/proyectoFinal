@@ -52,19 +52,6 @@ function actualizarSlider() {
 // -------------------------------------------------------------------
 actualizarSlider(); // Llamamos la función para mostrar la primera imagen al cargar la página
 
-// Obtener el botón y el contenido que se expandirá
-const btnExpandir = document.getElementById("btnExpandir");
-const texto2 = document.querySelector(".texto2");
-
-// Añadir un evento al botón para expandir y contraer el contenido
-btnExpandir.addEventListener("click", function() {
-    texto2.classList.toggle("mostrar"); // Cambia la visibilidad del contenido
-    if (texto2.classList.contains("mostrar")) {
-        btnExpandir.innerText = "Leer menos"; // Cambia el texto del botón
-    } else {
-        btnExpandir.innerText = "Leer más"; // Vuelve al texto original
-    }
-});
 
 
 
