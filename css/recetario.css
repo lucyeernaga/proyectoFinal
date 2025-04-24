@@ -10,11 +10,6 @@
     background-color: var(--bg-color);
 }
 
-.main__container {
-    max-width: 1200px; /* o lo que prefieras */
-    margin: 0 auto;
-}
-
 .main__titulo {
     font-size: 1.6rem;  
     font-weight: 600;
@@ -35,7 +30,7 @@
     flex-direction: column;
 }
 
-.recetas__uno, .recetas__dos, .recetas__tres, .recetas__cuatro, .recetas__cinco, .recetas__seis, .recetas__siete, .recetas__ocho {
+.recetas__item {
     width: 450px;
     padding: 20px;
     max-width: 100%;
