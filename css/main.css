@@ -25,7 +25,7 @@
     top: 0; 
     left: 0;
     width: 100%; 
-    height: auto; 
+    height: 100%; 
     object-fit: cover; /* la img se adapta al contenedor */
     z-index: -1; /* mandar la img detrás de los demás elementos */
 }
