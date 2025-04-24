@@ -18,8 +18,8 @@
     font-weight: 600; 
     color: var(--color-emphasis); 
     padding: 40px; 
-    margin: 0 0 10px; /* margen inferior */
-    text-align: center; /* paara centrar el texto */
+    margin: 0 0 10px;
+    text-align: center;
 }
 
 .main__recetas-otros {
