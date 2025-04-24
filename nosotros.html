@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet" target="_blank" rel="noreferrer">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" target="_blank" rel="noreferrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
@@ -85,7 +86,6 @@
 
             <section class="slider">
                 <h2 class="slider__titulo">Os presento a mi familia:</h2>
-                <p class="slider__texto">(Mi padre sacó las fotos)</p>
                 <div class="slider__container">
                     <div class="slider__foto">
                         <img class="slider__foto1" src="img/fotoAbuelas (2).png" alt="Foto Abuelas" loading="lazy">
@@ -94,8 +94,11 @@
                         <img class="slider__foto2" src="img/fotoYeya.png" alt="Foto Yeya" loading="lazy">
                     </div>
                 </div>
-                <button class="slider__btn slider__btn--prev" aria-label="Anterior" id="btnAnt" title="slider__boton">Anterior</button>
-                <button class="slider__btn slider__btn--next" aria-label="Siguiente" id="btnSig" title="slider__boton">Siguiente</button>
+                <!-- Botón izquierdo -->
+                <button class="slider__btn slider__btn-left fa-solid fa-chevron-left" id="btnPrev"></button>
+
+                <!-- Botón derecho -->
+                <button class="slider__btn slider__btn-right fa-solid fa-chevron-right" id="btnSig"></button>
             </section>
         </div> 
     </main>
