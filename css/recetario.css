@@ -13,7 +13,7 @@
 .main__titulo {
     font-size: 1.6rem;  
     font-weight: 600;
-    color: #bf8551;
+    color: var(--color-emphasis);
     padding: 20px;
     text-align: center;
 }
@@ -36,7 +36,7 @@
     max-width: 100%;
 }
 
-.receta__uno, .receta__dos, .receta__tres, .receta__cuatro, .receta__cinco, .receta__seis, .receta__siete, .receta__ocho {
+.recetas__imagen {
     width: 100%;
     max-height: 400px;
     height: auto;
@@ -46,18 +46,23 @@
 }
 
 .recetas__titulo{
-    color: #bf8551;
+    color: var(--color-emphasis);
     font-size: 1.2rem;
     margin: 20px 0 0 0;
     display: flex;
     justify-content: flex-start;
 }
 
-.receta__texto {
+.recetas__link {
     text-decoration: none;
     margin: 3px 0 0 0;
-    font-size: 0.9rem;
-    color: #faeae1;
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+    transition: color 0.3s ease;
+}
+
+.recetas__link:hover {
+    color: var(--color-emphasis);
 }
 
 .recetas__linea {
@@ -70,22 +75,22 @@
     margin: 20px 0 0 0;
 }
 
-.otros__1 {
+.otros__link {
     text-decoration: none;
-    color: #bf8551;
+    color: var(--color-emphasis);
     padding-bottom: 10px;
     transition: color 0.5s ease;
 }
 
-.otros__1:hover {
-    color: #faeae1;
+.otros__link:hover {
+    color: var(--color-secondary);
 }
 
 .otros__libros {
     margin: 10px 0 20px 0;
 }
 
-.otros__libro-1, .otros__libro-2, .otros__libro-3, .otros__libro-4 {
+.otros__libro {
     width: 200px;
     height: auto ;
     margin: 0 0 25px 0;
