@@ -33,6 +33,10 @@
     display: none;
 }
 
+.texto2.mostrar {
+    display: block;
+}
+
 .btn__expandir {
     background-color: var(--color-emphasis);
     border: none;

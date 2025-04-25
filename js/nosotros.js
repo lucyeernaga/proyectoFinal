@@ -8,7 +8,7 @@ const images = document.querySelectorAll('.slider__foto');
 
 // Seleccionamos los botones de "Anterior" y "Siguiente"
 const btnNext = document.querySelector('#btnSig');
-const btnPrev = document.querySelector('#btnAnt');
+const btnPrev = document.querySelector('#btnPrev');
 
 // Variable para saber qué imagen se muestra actualmente
 let currentImageIndex = 0;
@@ -53,6 +53,20 @@ function actualizarSlider() {
 actualizarSlider(); // Llamamos la función para mostrar la primera imagen al cargar la página
 
 
+// ----------------------------------------------------------
+// Botón "Leer más"
+// ----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const btnExpandir = document.getElementById("btnExpandir");
+    const texto2 = document.querySelector(".texto2");
+
+    if (btnExpandir && texto2) {
+        btnExpandir.addEventListener("click", function () {
+            texto2.classList.toggle("mostrar");
+            btnExpandir.innerText = texto2.classList.contains("mostrar") ? "Leer menos" : "Leer más";
+        });
+    }
+});
 
 
 
