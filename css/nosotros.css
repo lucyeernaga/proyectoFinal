@@ -176,26 +176,6 @@
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    .header__texto {
-        display: none;
-    }
-    
-    .header__menu--btn {
-        font-size: 1.7rem;
-        top: 30px;
-        padding: 10px;
-    }
-
-    .nav__list {
-        gap: 7px;
-        padding: 8px;
-        margin: 0;
-    }
-
-    .nav__item a {
-        font-size: 0.8rem;
-    }
-
     .slider {
         width: 560px;
         margin: 40px auto;

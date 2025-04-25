@@ -172,8 +172,12 @@
     }
 
     .main__titulo {
-        font-size: var(--font-size-lg);
-        padding: 15px;
+        font-size: var(--font-size-xl);
+        font-weight: 600;
+        color: var(--color-emphasis);
+        padding: 40px;
+        margin: 0 0 10px;
+        text-align: center;
     }
 
     .formulario {
