@@ -3,7 +3,7 @@
    3. Main, contenido
    ------------------------------------------------------------------- */
 
-   .main {
+.main {
     padding: 20px 10px;
     max-width: 1200px;
     margin: 0 auto;
@@ -54,6 +54,10 @@
     margin: 20px 0 0 0;
     display: flex;
     justify-content: flex-start;
+}
+
+.receta__texto {
+    margin-bottom: 20px;
 }
 
 .ingredientes__h4 {
