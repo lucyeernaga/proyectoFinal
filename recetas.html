@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetario</title>
+    <title>Recetas</title>
 
     <!-- Iconos y links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
@@ -20,20 +20,32 @@
     <script src="./js/inicio.js" defer></script>
     <script src="./js/recetas.js" defer></script>
 </head>
-<body>
+
+<body class="body">
+    <!-- Metodología BEM -->
+    <!-- La etiqueta <header> contiene la información del encabezado -->
     <header class="header">
         <div class="header__imagen">
             <img src="img/batidoOscuro.png" alt="Imagen de fondo">
         </div>
+
         <div class="header__contenido">
             <div class="header__logo">
-                <a class="header__link" href="./index.html" title="header__a"><img class="header__logotipo" src="img/logoBlancoMovileFirst.png" alt="Logo"></a>
+                <a class="header__link" href="./index.html" title="header__a"><img class="header__logotipo"
+                        src="img/logoBlancoMovileFirst.png" alt="Logo yaya's blog"></a>
             </div>
+
+            <!-- Icono menú -->
+            <button class="header__menu--btn" aria-label="Abrir menú" title="header__boton">
+                <i class="fa fa-bars"></i>
+            </button>
+
             <!-- Menú de navegación -->
             <nav class="nav">
                 <ul class="nav__list">
+                    <!-- Con la etiqueta: <a href=""></a>, estoy creando un enlace, que permite a quienes navegan por mi página web moverse de una página a otra o incluso a una parte específica de la misma página -->
                     <li class="nav__item"><a title="Inicio" href="./index.html">Inicio</a></li>
-                    <li class="nav__item"><a title="Recetario" href="./recetas.html">Recetas</a></li>
+                    <li class="nav__item"><a title="Recetario" href="./recetashtml">Recetas</a></li>
                     <li class="nav__item"><a title="Nosotros" href="./nosotros.html">Nosotros</a></li>
                     <li class="nav__item"><a title="Registro" href="./registro.html">Registro</a></li>
                     <li class="nav__item"><a title="Contacto" href="./index.html">Contacto</a></li>
@@ -42,49 +54,120 @@
         </div>
     </header>
 
-    <main>
+    <!-- La etiqueta main alberga todo el contenido principal de la web -->
+    <main class="main">
         <div class="main__container">
             <h1 class="main__titulo">Recetas</h1>
-
             <section class="main__recetas">
-                <!-- Aquí las recetas, cada una con una clase de categoría para mostrar solo las correctas -->
-                <div class="recetas salados" id="receta-container">
-                    <h2>Lasaña</h2>
-                    <img src="img/lasaña.jpg" alt="Lasaña" loading="lazy">
-                    <p>Una receta deliciosa de lasaña con carne y bechamel.</p>
-                </div>
+                <div class="recetas">
+                <!-- Aquí van las recetas, cada una con una clase de categoría para mostrar solo las correctas -->
+                <section class="recetas__uno">
+                    
+                    <div class="recetas salados" id="receta-container">
+                        <p class="receta__texto">La lasaña es uno de los platos que más se realizan en el mundo
+                            debido a su exquisito sabor y la sencillez con la que se puede preparar en numerosas
+                            versiones. En mi familia, esta receta ocupa un lugar muy especial, tanto en nuestro
+                            corazón como en nuestras
+                            tradiciones. Desde que éramos niños, mi hermano y yo siempre le pedíamos a nuestra
+                            abuela que nos preparara
+                            lasaña para celebrar nuestros cumpleaños. Aunque su repertorio de recetas es muy
+                            amplio y variado, la
+                            lasaña siempre fue nuestra preferida. Es un plato tan sabroso y fácil de hacer que
+                            les encanta
+                            tanto a los pequeños como a los mayores.</p>
 
-                <div class="recetas salados">
-                    <h2>Pizza</h2>
-                    <img src="img/pizza.jpg" alt="Pizza" loading="lazy">
-                    <p>Una pizza casera con ingredientes frescos.</p>
-                </div>
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="img/lasaña.jpg" loading="lazy">
+                            <source media="(min-width: 768px)" srcset="img/lasaña.jpg" loading="lazy">
+                            <img class="receta__uno" src="img/lasaña.jpg" alt="lasaña" loading="lazy">
+                        </picture>
 
-                <div class="recetas dulces">
-                    <h2>Tarta de manzana</h2>
-                    <img src="img/tarta-manana.jpg" alt="Tarta de manzana" loading="lazy">
-                    <p>Una tarta de manzana clásica, perfecta para cualquier ocasión.</p>
-                </div>
+                        <h2 class="recetas__titulo">Lasaña</h2>
+                        <h4 class="ingredientes__h4">Ingredientes - 6 comensales</h4>
+                        <ul class="ingredientes__lista">
+                            <li>12 láminas de lasaña</li>
+                            <li>90 gr de parmesano rallado</li>
+                            <li>1 poquito de mantequilla</li>
+                            <li>300 gr de carne picada de vuestra preferencia</li>
+                            <li>1/2 vaso de vino blanco</li>
+                            <li>250 gr de tomate triturado (si es casero mejor)</li>
+                            <li>1 zanahoria</li>
+                            <li>1 cebolla</li>
+                            <li>1 cucharada de aceite de oliva</li>
+                            <li>Sal</li>
+                            <li>Pimienta</li>
+                        </ul><br>
+                        <h4 class="ingredientes__h4">Para la bechamel</h4>
+                        <ul class="ingredientes__lista">
+                            <li>50 gr de mantequilla</li>
+                            <li>50 gr de harina</li>
+                            <li>1/2 litro de leche</li>
+                            <li>Sal</li>
+                            <li>Pimienta</li>
+                        </ul><br>
+                        <h4 class="ingredientes__h4">Elaboración</h4>
+                        <p class="receta__texto">Lo primero es preparar la salsa para la carne así que comienza
+                            pelando y picando
+                            finamente la zanahoria y la cebolla.
+                            <br>En una sartén grande, añade 1 cucharada de aceite de oliva y caliéntalo a fuego
+                            medio.
+                            <br>Añade la cebolla y la zanahoria picadas. Cocina por unos minutos hasta que estén
+                            tiernas. Agrega la carne picada y cocínala hasta que se dore, desmenuzándola con una
+                            cuchara de madera.
+                            Luego añade el vino blanco y deja que se evapore el alcohol.
+                            <br>Para terminar la salsa incorpora el tomate triturado, sal, pimienta al gusto y
+                            deja cocinar a fuego lento durante unos 20 minutos, hasta que la salsa espese un
+                            poco.
+                        </p>
+                        <p class="receta__texto">Lo segundo es preparar la bechamel. En una cacerola, derrite 50
+                            g de mantequilla a fuego medio, agrega la harina y revuelve durante 1-2 minutos para
+                            formar una pasta (roux).
+                            <br> Añade poco a poco la leche mientras revuelves constantemente para evitar que se
+                            formen grumos.
+                            <br> Cocina la bechamel a fuego medio, removiendo constantemente, hasta que espese.
+                            Agrega sal y pimienta al gusto.
+                        </p>
+                        <p class="receta__texto">Cocina las láminas de lasaña en abundante agua con sal, según
+                            las indicaciones del paquete. Después de cocerlas, escúrrelas y resérvalas.
+                            <br>¡Es hora de montar la lasaña! Precalienta el horno a 180°C y en una fuente para
+                            hornear, unta un poco de mantequilla en el fondo para evitar que se pegue.
+                            <br>Coloca una capa de láminas de lasaña en el fondo, añade una capa de salsa de
+                            carne y luego una capa de bechamel.
+                            <br>Repite el proceso hasta terminar las láminas de lasaña, asegurándote de que la
+                            última capa sea de bechamel. Como último paso antes de hornear debes espolvorear el
+                            parmesano rallado por encima y hornea la lasaña en el horno precalentado durante
+                            unos 20-25 minutos.
+                        </p>
+                        <hr class="recetas__linea">
+                    </div>
 
-                <div class="recetas dulces">
-                    <h2>Brownie</h2>
-                    <img src="img/brownie.jpg" alt="Brownie" loading="lazy">
-                    <p>Un brownie de chocolate húmedo y delicioso.</p>
-                </div>
+                    <div class="recetas dulces">
+                        <h2>Tarta de manzana</h2>
+                        <img src="img/tarta-manana.jpg" alt="Tarta de manzana" loading="lazy">
+                        <p>Una tarta de manzana clásica, perfecta para cualquier ocasión.</p>
+                    </div>
 
-                <div class="recetas navidad">
-                    <h2>Turrón</h2>
-                    <img src="img/turron.jpg" alt="Turrón" loading="lazy">
-                    <p>Turrón de chocolate para las fiestas navideñas.</p>
-                </div>
+                    <div class="recetas dulces">
+                        <h2>Brownie</h2>
+                        <img src="img/brownie.jpg" alt="Brownie" loading="lazy">
+                        <p>Un brownie de chocolate húmedo y delicioso.</p>
+                    </div>
 
-                <div class="recetas navidad">
-                    <h2>Polvorones</h2>
-                    <img src="img/polvorones.jpg" alt="Polvorones" loading="lazy">
-                    <p>Polvorones navideños, un dulce clásico.</p>
-                </div>
+                    <div class="recetas navidad">
+                        <h2>Turrón</h2>
+                        <img src="img/turron.jpg" alt="Turrón" loading="lazy">
+                        <p>Turrón de chocolate para las fiestas navideñas.</p>
+                    </div>
+
+                    <div class="recetas navidad">
+                        <h2>Polvorones</h2>
+                        <img src="img/polvorones.jpg" alt="Polvorones" loading="lazy">
+                        <p>Polvorones navideños, un dulce clásico.</p>
+                    </div>
+                </section>
             </section>
-
+            
+            </div>
             <!-- Menú de navegación para las categorías -->
             <nav>
                 <ul>
