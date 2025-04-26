@@ -74,7 +74,40 @@
     margin: 20px 0 10px 0;
 } 
 
+.otros {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    align-items: center; /* Centrado de los elementos dentro de otros */
+}
 
+.otros__link {
+    text-decoration: none;
+    color: var(--color-emphasis);
+    padding-bottom: 10px;
+    transition: color 0.5s ease;
+    text-align: center; /* Centrado de los enlaces */
+}
+
+.otros__link:hover {
+    color: var(--color-secondary);
+}
+
+.otros__libros {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center; /* Centra los libros */
+    flex-wrap: wrap; /* Permite que los libros se ajusten */
+    gap: 10px;
+}
+
+.otros__libro {
+    width: 200px;
+    height: auto;
+    margin: 0 10px 25px 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    text-align: center; /* Centra el contenido dentro de cada libro */
+}
 
 
 
@@ -124,8 +157,11 @@
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
     .main {
-        margin: 20px 0 0 200px;
         max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-left: 20px;  /* Añades un poquito de espacio si quieres */
+        padding-right: 20px;
     }
 
     .main__titulo {
@@ -138,7 +174,16 @@
         text-align: justify;
         align-items: flex-start;
         gap: 10px; 
-        padding: 10px 0 0 10px;
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+
+    .main__recetas-otros {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* o 70% 30% si prefieres */
+        gap: 30px;
+        margin-bottom: 60px;
+        align-items: start;
     }
 
     .recetas {
@@ -147,9 +192,13 @@
     }
 
     .recetas__uno {
-        width: 800px;
-        padding: 20px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 auto;
     }
 
     .receta__uno {
@@ -175,14 +224,45 @@
     }
 
     .receta__texto {
-        font-size:var(--font-size-sm);
+        font-size: var(--font-size-sm);
         color: var(--bg-color-secondary);
         padding-bottom: 20px;
-        width: 980px;
+        max-width: 800px; /* Igual que las imágenes o un poco más */
+        text-align: justify;
+        margin: 0 auto;
     }
 
     .recetas__linea {
         margin: 20px 0 0 0;
+    }
+
+    .otros {
+        display: flex;
+        flex-direction: column;
+        margin: 135px 0 0 0;
+        width: 100%;
+    }
+
+    .otros__link {
+        text-decoration: none;
+        color: var(--color-emphasis);
+        padding-bottom: 10px;
+        transition: color 0.5s ease;
+    }
+
+    .otros__link:hover {
+        color: var(--bg-color-secondary);
+    }
+
+    .otros__libros {
+        margin: 10px 0 20px 0;
+    }
+
+    .otros__libro {
+        width: 250px;
+        height: auto ;
+        margin: 0 0 25px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -197,17 +277,30 @@
 
 /* Media Query para tablets*/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main {
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .main__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .main__recetas {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px; 
-        padding: 10px 0 0 10px;
+        padding: 10px 20px;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .recetas {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .recetas__uno {
@@ -246,4 +339,5 @@
     .recetas__linea {
         margin: 20px 0 0 0;
     }
+    
 }
