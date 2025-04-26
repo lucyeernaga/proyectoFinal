@@ -44,34 +44,15 @@
     content: "";
 }
 
-/* Puedes añadir media queries si luego quieres refinar en escritorio */
-
-@media (min-width: 768px) {
-    .politica {
-        gap: 30px;
-    }
-
-    .politica__titulo {
-        font-size: var(--font-size-lg);
-    }
-
-    .politica__texto {
-        font-size: var(--font-size-md);
-    }
-}
 
 
 
 
 
 /* -------------------------------------------------------------------
-   5. Media Query: pantallas frandes, desktop, tablets y móviles
+   Media Query: pantallas frandes, desktop, tablets y móviles
    ------------------------------------------------------------------- */
 
-/* Media Query para pantallas más grandes */ 
-@media screen and (min-width: 1600px) {
-
-}
 
 /* Media Query para desktop */
 @media screen and (min-width: 1024px) {
@@ -82,9 +63,15 @@
     .main__titulo {
         font-size: var(--font-size-xxl);
     }
-}
 
+    .politica__lista {
+        padding: 0 40px; /* más separación lateral */
+        font-size: var(--font-size-sm); /* tamaño de letra más cómodo en desktop */
+    }
 
-/* Media Query para tablets*/
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .politica__lista li {
+        padding-left: 15px; /* separa el bullet del texto */
+        margin-bottom: 10px; /* más espacio entre los puntos */
+        line-height: 1.6; /* texto más descansado */
+    }
 }
