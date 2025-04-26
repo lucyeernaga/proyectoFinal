@@ -161,6 +161,26 @@
     text-align: center; /* Centra el contenido dentro de cada libro */
 }
 
+.boton-subir-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.boton-subir {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--color-emphasis);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+
+.boton-subir:hover {
+    background-color: var(--color-secondary);
+}
 
 
 
