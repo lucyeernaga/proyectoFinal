@@ -154,6 +154,15 @@ body {
     text-align: center; /* paara centrar el texto */
 }
 
+.main__titulo-uno {
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    color: var(--color-emphasis); 
+    padding: 40px; 
+    margin: 0 0 10px; /* margen inferior */
+    text-align: center; /* paara centrar el texto */
+}
+
 /* -------------------------------------------------------------------
    4. Footer
    ------------------------------------------------------------------- */
@@ -280,7 +289,7 @@ body {
     }
 
     .nav {
-        top: 70px; 
+        top: 109px; 
         right: 50px;
         width: 100px;
         padding: 10px;
@@ -353,6 +362,15 @@ body {
         font-size: 1.7rem;
         top: 30px;
         padding: 10px;
+    }
+
+    .nav {
+        top: 75px; 
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 99;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .nav__list {

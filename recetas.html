@@ -60,20 +60,20 @@
     <!-- La etiqueta main alberga todo el contenido principal de la web -->
     <main class="main">
         <div class="main__container">
-            <h1 class="main__titulo">Recetas</h1>
+            <div class="header__recetas">
+                <h1 class="main__titulo">Recetas</h1>
+            
+                <!-- Menú de categorías -->
+                <div class="nav__recetas">
+                    <a href="recetas.html?id=salados">Recetas Saladas</a>
+                    <a href="recetas.html?id=dulces">Recetas Dulces</a>
+                    <a href="recetas.html?id=navidad">Recetas Navideñas</a>
+                </div>
+            </div>
 
-            <!-- Menu para las categ. -->
-            <nav>
-                <ul>
-                    <li><a href="recetas.html?id=salados">Recetas Saladas</a></li>
-                    <li><a href="recetas.html?id=dulces">Recetas Dulces</a></li>
-                    <li><a href="recetas.html?id=navidad">Recetas Navideñas</a></li>
-                </ul>
-            </nav>
-
-            <!-- Aquí empieza la parte de recetas + libros -->
+            <!-- recetas + libros -->
             <div class="main__recetas-otros">
-                <!-- Recetas -->
+                <!-- recetas -->
                 <section class="main__recetas" id="receta-container">
 
                     <div class="recetas salados">
@@ -153,6 +153,55 @@
                             parmesano rallado por encima y hornea la lasaña en el horno precalentado durante
                             unos 20-25 minutos.
                         </p>
+                        <hr class="recetas__linea">
+                    </div>
+
+
+                     <!-- espaguetis-->
+                     <div class="recetas salados">
+                        <p class="receta__texto">
+                            Los espaguetis a la bolognesa son mucho más que un plato clásico: son un abrazo en forma de comida, una de esas recetas que conquistan corazones generación tras generación.
+                            En Yaya’s Blog no podía faltar este icono de la cocina familiar, sencillo pero lleno de matices y recuerdos.</p>
+
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg" loading="lazy">
+                            <source media="(min-width: 768px)" srcset="img/espaguetis.jpg" loading="lazy">
+                            <img class="receta__uno" src="img/espaguetis.jpg" alt="lasaña" loading="lazy">
+                        </picture>
+
+
+                        <h2 class="recetas__titulo">Arroz negro</h2>
+                        <h4 class="ingredientes__h4">Ingredientes - 4 comensales</h4>
+                        <ul class="ingredientes__lista">
+                            <li>400 g de espaguetis</li>
+                            <li>300 g de carne picada de ternera (o mezcla ternera-cerdo)</li>
+                            <li>1 cebolla mediana</li>
+                            <li>2 dientes de ajo</li>
+                            <li>400 g de tomate triturado</li>
+                            <li>2 cucharadas de concentrado de tomate </li>
+                            <li>1 zanahoria</li>
+                            <li>1 ramita de apio (opcional)</li>
+                            <li>1 chorrito de vino tinto (unos 100 ml)</li>
+                            <li>Aceite de oliva virgen extra</li>
+                            <li>sal y pimienta negra al gusto</li>
+                            <li>Orégano seco o albahaca fresca para decorar</li>
+                            <li>Queso parmesano rallado</li>
+                        </ul><br>
+                        <h4 class="ingredientes__h4">Elaboración</h4>
+                        <p class="receta__texto">Pica finamente la cebolla, el ajo, la zanahoria y el apio. 
+                            Sofríelos en una sartén grande con un poco de aceite de oliva a fuego medio, hasta que estén blanditos.
+                            <br>Incorpora la carne picada y cocina removiendo hasta que se dore. No tengas prisa; 
+                            un buen dorado da muchísimo sabor.
+                        </p>
+                        <p class="receta__texto"> Vierte el vino tinto y deja que el alcohol se evapore (aproximadamente 2-3 minutos).
+                            <br>Agrega el tomate triturado y el concentrado de tomate. Remueve bien. Sazona con sal, pimienta y un poco 
+                            de orégano. Cocina a fuego lento unos 20 minutos, removiendo de vez en cuando. Cuanto más tiempo, más rica 
+                            (pero con 20-25 min queda estupenda).
+                        </p>
+                        <p class="receta__texto"> Mientras tanto, hierve los espaguetis en abundante agua salada según las instrucciones del paquete. 
+                            ¡Recuerda que al dente es el apellido de cualquier buen espagueti!
+                            <br> Escurre la pasta y mézclala con la salsa boloñesa, o sirve la salsa por encima si prefieres una presentación más clásica.
+                            <br>Espolvorea queso parmesano y unas hojas de albahaca fresca justo antes de servir.
                         <hr class="recetas__linea">
                     </div>
 
@@ -624,7 +673,6 @@
                     </div>
 
 
-
                     <!-- batido -->
                     <div class="recetas dulces">
 
@@ -659,7 +707,6 @@
                         </p>
                         <hr class="recetas__linea">
                     </div>
-
 
 
                     <!-- tarta de limon -->
@@ -739,7 +786,6 @@
                     </div>
 
 
-
                     <!--  navidad -->
                     <!-- sopa de cebolla -->
                     <div class="recetas navidad">
@@ -806,7 +852,6 @@
                         </p>
                         <hr class="recetas__linea">
                     </div>
-
 
 
                     <!-- canapés gulas -->

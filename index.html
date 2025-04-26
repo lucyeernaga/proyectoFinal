@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">  
+<html lang="es">
 
 <!-- metadatos, viewport => diseño responsive, título de la página, fuentes y estilos -->
 
@@ -10,18 +10,21 @@
         content="Si estás en busca de recetas tradicionales y deliciosas este es tu blog! Entra y descrubre las maravillas...">
     <title>Yaya's Blog</title>
 
- 
+
     <!-- Iconos y links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noreferrer">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin target="_blank" rel="noreferrer">
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet" target="_blank" rel="noreferrer">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" target="_blank" rel="noreferrer">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" target="_blank" rel="noreferrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"
+        target="_blank" rel="noreferrer">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/inicio.css">
-    
+
     <!-- Scripts -->
     <script src="./js/inicio.js" defer></script>
 </head>
@@ -66,102 +69,142 @@
     <main class="main">
         <!-- <div> es un elemento de bloque (block) -->
         <div class="main__container">
-            <h1 class="main__titulo">Especialidades de la casa</h1>
-           
+            <h1 class="main__titulo">¡Bienvenidos a Yaya's Blog!</h1>
+            <p class="recetas__bienvenida">Si has llegado hasta aquí, déjame decirte que no ha sido por casualidad: los buenos sabores siempre encuentran su camino.
+                En Yaya’s Blog celebramos algo que no pasa de moda ni caduca: el amor familiar servido en un plato.
+                Este rincón nace de la memoria de mis abuelas, Marta y Manoli —auténticas maestras de cocina, paciencia y sabiduría— y de un profundo deseo de compartir esas recetas que no solo alimentan el cuerpo, sino también el alma. Aquí, cada receta es una historia, cada plato es un puente entre generaciones, y cada cucharada es un homenaje a nuestras raíces.
+                <br> <br> Además, te confieso algo: esta web también es el primer ladrillo de un proyecto más grande. Un lugar donde la tradición se da la mano con la innovación digital, mientras practico todo lo aprendido en mi formación en diseño web y marketing digital. Porque si algo me enseñaron mis yayas, es que nunca se deja de aprender... y que los experimentos, mejor si son con mucho cariño (y si llevan croquetas, mejor aún).
+                Mi propósito es que encuentres aquí inspiración, emoción y, por qué no, un motivo más para sentarte a la mesa con los tuyos, mirar a tu abuela a los ojos y decirle: “Enséñame ese truco que solo tú sabes”.
+                <br>
+                <br>
+                Así que, ponte cómodo, abre bien los sentidos y prepárate para un viaje que huele a guiso lento y a futuro brillante.
+                Porque en Yaya’s Blog, la tradición no es pasado: es el mejor ingrediente del mañana.
+                <br>
+                ¡Bienvenido a casa! 
+            </p>
+            <h2 class="main__titulo-uno">Las especialidades de la casa:</h2>
             <!--  Sección de recetas -->
             <!-- He usado <section> en varias ocasiones porque me ayuda tener bien definidas las tres partes del main -->
             <section class="recetas__grid">
 
-                <!-- <picture> se usa para imágenes -->
-                <picture class="recetas__item">
+                <!-- <div> se usa para imágenes -->
+                <div class="recetas__item">
                     <!-- media queries y srcset para adaptar el diseño a dif formatos -->
-                    <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg">
-                    <source media="(min-width: 768px)" srcset="img/espaguetis.jpg">
-                    <!-- target="_blank" para que el enlace se abra en una nueva pestaña-->
-                    <a href="recetario.html" target="_blank" title="Ver espaguetis bolognesa">
-                        <img class="receta" src="img/espaguetis.jpg" alt="Espaguetis">
-                    </a>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/espaguetis.jpg">
+                        <source media="(min-width: 768px)" srcset="img/espaguetis.jpg">
+                        <!-- target="_blank" para que el enlace se abra en una nueva pestaña-->
+                        <a href="recetas.html" title="Ver espaguetis bolognesa">
+                            <img class="receta" src="img/espaguetis.jpg" alt="Espaguetis">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Espaguetis bolognesa</h2>
                     <p class="recetas__texto">Los espaguetis es una receta querida por todo el mundo, pero la gente no
                         suele salir del típico plato de espaguetis con salsa de tomate y carne. Si quieres quedarte
                         boquiabierto con esta pedazo de receta de sabor único y potente.
                         <br>
-                        <a class="receta__texto" href="recetario.html" target="_blank" title="Ver espaguetis bolognesa">Sigue
-                        leyendo...</a></p>
+                        <a class="receta__texto" href="recetario.html" target="_blank"
+                            title="Ver espaguetis bolognesa">Sigue
+                            leyendo...</a>
+                    </p>
                     <!-- <hr> para hacer una línea horizontal, como un separador -->
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/filete.jpg">
-                    <source media="(min-width: 768px)" srcset="img/filete.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver filete de ternera con tomates asados">
-                        <img class="receta" src="img/filete.jpg" alt="Filete">
-                    </a>
+                <div class="recetas__item">
+
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/filete.jpg">
+                        <source media="(min-width: 768px)" srcset="img/filete.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver filete de ternera con tomates asados">
+                            <img class="receta" src="img/filete.jpg" alt="Filete">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Filete de ternera con tomates asados</h2>
                     <p class="recetas__texto"> Esta es otra receta estrella bastante simple pero con el toque de unos
                         buenos tomates asados lentamente en el horno queda una comida espectacular y muy completa.
                         ¡Atrévete a probarlo y cuéntanos tus impresiones abajo!
                         <br>
-                        <a class="receta__texto" href="recetario.html" target="_blank" title="Ver filete de ternera con tomates asados">Sigue
-                        leyendo...</a></p>
+                        <a class="receta__texto" href="recetario.html" target="_blank"
+                            title="Ver filete de ternera con tomates asados">Sigue
+                            leyendo...</a>
+                    </p>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/arrozNegro.jpg">
-                    <source media="(min-width: 768px)" srcset="img/arrozNegro.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver arroz negro">
-                        <img class="receta" src="img/arrozNegro.jpg" alt="Arroz Negro">
-                    </a>
+                <div class="recetas__item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/arrozNegro.jpg">
+                        <source media="(min-width: 768px)" srcset="img/arrozNegro.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver arroz negro">
+                            <img class="receta" src="img/arrozNegro.jpg" alt="Arroz Negro">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Arroz negro de la casa</h2>
                     <p class="recetas__texto">El arroz negro es sin duda una de las especialidades de mi abuela y uno de
                         los platos favoritos de toda la familia. Sin duda te recomiendo seguir leyendo porque es
                         increíble.
                         <br>
                         <a class="receta__texto" href="recetario.html" target="_blank" title="Ver arroz negro">Sigue
-                        leyendo...</a></p>
+                            leyendo...</a>
+                    </p>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/tortillaPatatas.jpg">
-                    <source media="(min-width: 768px)" srcset="img/tortillaPatatas.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver tortilla de patatas">
-                        <img class="receta" src="img/tortillaPatatas.jpg" alt="Tortilla de patatas">
-                    </a>
+                <div class="recetas__item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/tortillaPatatas.jpg">
+                        <source media="(min-width: 768px)" srcset="img/tortillaPatatas.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver tortilla de patatas">
+                            <img class="receta" src="img/tortillaPatatas.jpg" alt="Tortilla de patatas">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Tortilla de patatas</h2>
                     <p class="recetas__texto">Está claro que la tortilla de patatas le queda bien a todas las abuelas,
                         pero aquí os dejamos nuestra receta familiar de tortilla de patatas española que queda súper
                         sabrosa y jugosa. ¡No os arrepentireis!
                         <br>
-                        <a class="receta__texto" href="recetario.html" target="_blank" title="Ver tortilla de patatas">Sigue
-                        leyendo...</a></p>
+                        <a class="receta__texto" href="recetario.html" target="_blank"
+                            title="Ver tortilla de patatas">Sigue
+                            leyendo...</a>
+                    </p>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/corderoAsado.jpg">
-                    <source media="(min-width: 768px)" srcset="img/corderoAsado.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver cordero asado">
-                        <img class="receta" src="img/corderoAsado.jpg" alt="Cordero asado">
-                    </a>
+                <div class="recetas__item">
+
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/corderoAsado.jpg">
+                        <source media="(min-width: 768px)" srcset="img/corderoAsado.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver cordero asado">
+                            <img class="receta" src="img/corderoAsado.jpg" alt="Cordero asado">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Delicioso Cordero Asado</h2>
                     <p class="recetas__texto">Esta receta es típica de la época navideña y en mi casa mi abuela la
                         hace todos los años, ella tiene todos los trucos para que el cordero quede perfecto y con un
                         sabor inolvidable y reconfortante. Sin duda sabe a hogar esta receta.
                         <br>
                         <a class="receta__texto" href="recetario.html" target="_blank" title="Ver cordero asado">Sigue
-                        leyendo...</a></p></a>
+                            leyendo...</a>
+                    </p></a>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/canapeGulas.jpg">
-                    <source media="(min-width: 768px)" srcset="img/canapeGulas.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver canapé de gulas">
-                        <img class="receta" src="img/canapeGulas.jpg" alt="Canapé gulas">
-                    </a>
+                <div class="recetas__item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/canapeGulas.jpg">
+                        <source media="(min-width: 768px)" srcset="img/canapeGulas.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver canapé de gulas">
+                            <img class="receta" src="img/canapeGulas.jpg" alt="Canapé gulas">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Canapé gulas</h2>
                     <p class="recetas__texto">Estos canapés están deliciosos, son fáciles de preparar y están de muerte.
                         Como estamos en fechas navideñas, todos sabemos lo díficil que es a veces preparar grandes
@@ -169,35 +212,44 @@
                         de comida para mucha gente. Con esto triufareis seguro.
                         <br>
                         <a class="receta__texto" href="recetario.html" target="_blank" title="Ver canapé de gulas">Sigue
-                        leyendo...</a></p>
+                            leyendo...</a>
+                    </p>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/roscon.jpg">
-                    <source media="(min-width: 768px)" srcset="img/roscon.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver roscón de almendras">
-                        <img class="receta" src="img/roscon.jpg" alt="Roscón de almendras">
-                    </a>
+                <div class="recetas__item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/roscon.jpg">
+                        <source media="(min-width: 768px)" srcset="img/roscon.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver roscón de almendras">
+                            <img class="receta" src="img/roscon.jpg" alt="Roscón de almendras">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Roscón de almendras</h2>
                     <p class="recetas__texto">Este es un postre hecho a base de almendra se elabora de forma artesanal
                         desde
                         tiempos inmemoriales en el pueblo natal de mi bisabuela y de mi abuela, Villalba, en Galicia. Es
                         apto
-                        para aquellas personas que no puedan tomar gluten o lactosa. 
+                        para aquellas personas que no puedan tomar gluten o lactosa.
                         <br>
-                        <a class="receta__texto" href="recetario.html" target="_blank" title="Ver roscón de almendras">Sigue
-                        leyendo...</a></p>
-                    
-                    <hr class="recetas__linea">
-                </picture>
+                        <a class="receta__texto" href="recetario.html" target="_blank"
+                            title="Ver roscón de almendras">Sigue
+                            leyendo...</a>
+                    </p>
 
-                <picture class="recetas__item">
-                    <source media="(min-width: 1024px)" srcset="img/sorbeteLimon.jpg">
-                    <source media="(min-width: 768px)" srcset="img/sorbeteLimon.jpg">
-                    <a href="recetario.html" target="_blank" title="Ver sorbete de limón">
-                        <img class="receta" src="img/sorbeteLimon.jpg" alt="Sorbete de limón">
-                    </a>
+                    <hr class="recetas__linea">
+                </div>
+
+                <div class="recetas__item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/sorbeteLimon.jpg">
+                        <source media="(min-width: 768px)" srcset="img/sorbeteLimon.jpg">
+                        <a href="recetario.html" target="_blank" title="Ver sorbete de limón">
+                            <img class="receta" src="img/sorbeteLimon.jpg" alt="Sorbete de limón">
+                        </a>
+                    </picture>
+
                     <h2 class="recetas__titulo">Postre de sorbete de limón</h2>
                     <p class="recetas__texto">El sorbete de limón es un postre atemporal que le gusta tanto a pequeños
                         como
@@ -205,10 +257,12 @@
                         ingredientes que
                         todos solemos tener en casa.
                         <br>
-                        <a class="receta__texto" href="recetario.html" target="_blank" title="Ver sorbete de limón">Sigue
-                        leyendo...</a></p>
+                        <a class="receta__texto" href="recetario.html" target="_blank"
+                            title="Ver sorbete de limón">Sigue
+                            leyendo...</a>
+                    </p>
                     <hr class="recetas__linea">
-                </picture>
+                </div>
             </section>
 
             <!-- Section de comentarios, formulario con etiquetas <fieldset>, <label>, <input> y <textarea> -->

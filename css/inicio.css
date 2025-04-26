@@ -13,6 +13,11 @@
     margin: 0 auto;
 }
 
+.recetas__bienvenida {
+    margin: 0 0 40px 0;
+    font-size: var(--font-size-sm);
+}
+
 .recetas__grid {
     display: grid;
     grid-template-columns: 1fr;
