@@ -29,32 +29,6 @@
     font-weight: 300;
 }
 
-.texto2 {
-    display: none;
-}
-
-.texto2.mostrar {
-    display: block;
-}
-
-.btn__expandir {
-    background-color: var(--color-emphasis);
-    border: none;
-    font-weight: 550;
-    color: var(--color-secondary);
-    font-size: var(--font-size-sm);
-    border-radius: 4px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-    margin: 20px 0 0;
-}
-
-.btn__expandir:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-emphasis);
-}
-
 
 
 
