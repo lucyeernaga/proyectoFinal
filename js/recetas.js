@@ -1,27 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Leer el parámetro `id` de la URL (ej. receta.html?id=salados)
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryId = urlParams.get('id'); // salados, dulces, navidad
+document.addEventListener('DOMContentLoaded', () => {
+    // cogemos el parámetro id(ej: recetas.html?id=salados)
+    const params = new URLSearchParams(window.location.search);
+    const categoria = params.get('id'); // salados, dulces, navidad
 
-    // Función para mostrar solo las recetas de la categoría seleccionada
-    function showRecipes(category) {
-        const allRecipes = document.querySelectorAll('.recetas');
-        
-        // Mostrar solo las recetas que coinciden con la categoría
-        allRecipes.forEach(recipe => {
-            if (recipe.classList.contains(category)) {
-                recipe.style.display = 'block';
+    //con esto se muestran solo las recetas de la categoría elegida
+    function mostrarRecetas(categoriaElegida) {
+        const recetas = document.querySelectorAll('.recetas');
+
+        recetas.forEach(receta => {
+            if (receta.classList.contains(categoriaElegida)) {
+                receta.style.display = 'block';
             } else {
-                recipe.style.display = 'none';
+                receta.style.display = 'none';
             }
         });
     }
 
-    // Verificar si se pasó un `id` en la URL, y mostrar las recetas de esa categoría
-    if (categoryId) {
-        showRecipes(categoryId);
+    // Si hay una categ. se muestra esa, si no, se muestran las recetas saladas
+    if (categoria) {
+        mostrarRecetas(categoria);
     } else {
-        // Si no hay categoría en la URL, mostrar todas las recetas
-        showRecipes('salados'); // Mostrar una categoría predeterminada
+        mostrarRecetas('salados');
     }
 });
