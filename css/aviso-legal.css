@@ -1,0 +1,197 @@
+/* -------------------------------------------------------------------
+   3. Main, contenido
+   ------------------------------------------------------------------- */
+
+   .main {
+    padding: 20px;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+}
+
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main__titulo {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-emphasis);
+    padding: 40px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.main__historia {
+    padding: 20px;
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+}
+
+.texto2 {
+    display: none;
+}
+
+.texto2.mostrar {
+    display: block;
+}
+
+.btn__expandir {
+    background-color: var(--color-emphasis);
+    border: none;
+    font-weight: 550;
+    color: var(--color-secondary);
+    font-size: var(--font-size-sm);
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    margin: 20px 0 0;
+}
+
+.btn__expandir:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-emphasis);
+}
+
+/* -------------------------------------------------------------------
+   Slider
+   ------------------------------------------------------------------- */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    z-index: 5;
+}
+
+.slider__titulo {
+    font-weight: 600;
+    color: var(--color-emphasis);
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    z-index: 10;
+    white-space: normal;
+}
+
+.slider__foto {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botones de nav */
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    padding: 15px;
+    color: var(--color-emphasis);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.slider__btn:hover {
+    color: var(--color-secondary);
+    transform: scale(1.2);
+}
+
+.slider__btn-left {
+    left: 30px;
+}
+
+.slider__btn-right {
+    right: 30px;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------
+   5. Media Query: pantallas frandes, desktop, tablets y móviles
+   ------------------------------------------------------------------- */
+
+/* Media Query para pantallas más grandes */ 
+@media screen and (min-width: 1600px) {
+
+    .slider {
+        width: 1200px;
+        margin: 40px auto;
+    }
+}
+
+/* Media Query para desktop */
+@media screen and (min-width: 1024px) {
+    .main {
+        margin: 0 auto;
+    }
+
+    .main__titulo {
+        font-size: var(--font-size-xxl);
+    }
+
+    .slider {
+        width: 700px; 
+        margin: 30px auto;
+    }
+
+    .slider__foto {
+        width: 100%;
+    }
+
+    .slider__foto1, .slider__foto2 {
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+/* Media Query para tablets*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .slider {
+        width: 560px;
+        margin: 40px auto;
+    }
+
+    .slider__foto {
+        width: 100%;
+    }
+
+    .slider__foto1, .slider__foto2 {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        transition: transform 0.5s ease-in-out; 
+        position: relative;
+        flex-direction: row; 
+        flex-wrap: nowrap;
+    }
+}
